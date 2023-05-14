@@ -1,1 +1,7 @@
 @use "./setup.scss";
+@use "./variables.scss" as *;
+@use "./global.scss";
+
+@use "./partials/header.scss";
+@use "./partials/intro.scss";
+@use "./partials/history.scss";

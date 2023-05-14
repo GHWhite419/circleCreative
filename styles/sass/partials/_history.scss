@@ -1,0 +1,14 @@
+@use "../variables" as *;
+
+.history {
+    .contentDivider:first-of-type {
+        background-color: $colorPrimary;
+    }
+    h2 {
+        color: $colorLight1;
+    }
+    .imgContainer {
+        position: absolute;
+        width: 10rem;
+    }
+}

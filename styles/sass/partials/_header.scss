@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .imgContainer {
+    width: 5rem;
+  }
+  i {
+    margin-right: .75rem;
+    color: #848383;
+    border: 1px solid #848383;
+    padding: .5rem;
+    border-radius: 100%;
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header img {
+    content: url(../assets/logo1.png);
+  }
+}

@@ -1,0 +1,57 @@
+@use "./variables" as *;
+
+section {
+  min-height: 100vh;
+}
+.contentDivider {
+  position: relative;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h1, h2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  max-width: 17rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+hgroup {
+  position: relative;
+  p {
+    position: absolute;
+    font-family: $fontSecondary;
+    font-weight: 300;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  // Change header wrapper width to 92.5%;
+  // Uncenter intro heading text
+  // Float intro animal logos to vertical center
+  section {
+    display: flex;
+  }
+  .contentDivider {
+    width: 50%;
+  }
+}
+
+// Temporary rule; remove when able
+.imgContainer, li img {
+  max-width: 10rem;
+}

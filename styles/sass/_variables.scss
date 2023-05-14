@@ -1,0 +1,14 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+$fontPrimary:'Raleway', sans-serif;
+$fontSecondary: 'Oswald', sans-serif;
+
+$colorPrimary: #F7484E;
+$colorDark1: #000;
+$colorDark2: #494648;
+$colorLight1: #FFF;
+$colorLight2: #F0F4F4;
+
+html {
+    font-family: $fontPrimary;
+}
