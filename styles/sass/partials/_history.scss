@@ -1,14 +1,63 @@
 @use "../variables" as *;
 
 .history {
-    .contentDivider:first-of-type {
-        background-color: $colorPrimary;
+  .contentDivider:first-of-type {
+    background-color: $colorPrimary;
+  }
+  h2 {
+    color: $colorLight1;
+  }
+  .imgContainer {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    border-radius: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      object-fit: cover;
+      height: 100%;
+      transform: scale(2.3);
+      object-position: -2.3rem 1.8rem;
+      filter: grayscale(100%);
     }
-    h2 {
-        color: $colorLight1;
+  }
+  h3 {
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    margin: 0;
+    padding-top: 3rem;
+  }
+  article p {
+    font-size: 0.85rem;
+    color: $colorLight2;
+  }
+  h4 {
+    font-family: $fontSecondary;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    span {
+      color: $colorPrimary;
+      padding-right: 0.5rem;
     }
-    .imgContainer {
-        position: absolute;
-        width: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+    .history .imgContainer {
+        top: 5%;
+    }
+    .historyText {
+        display: flex;
+        justify-content: space-between;
+        article {
+            width: calc(100% / 2 - 1rem);
+        }
+    }
+    .history h3 {
+      padding-top: 8rem;
     }
 }

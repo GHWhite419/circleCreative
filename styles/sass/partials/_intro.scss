@@ -3,11 +3,11 @@
 .intro .contentDivider {
   h1 {
     color: $colorDark1;
-    margin: 0;
   }
   hgroup p {
     color: $colorPrimary;
     font-size: 1.75rem;
+    min-width: 13rem;
   }
   &:first-of-type {
     background-color: $colorDark2;
@@ -28,7 +28,7 @@
 .intro .imgContainer {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 50%;
   transform: translate(-50%, 50%);
   z-index: 10;
   display: none;
@@ -124,6 +124,14 @@
   .intro .contentDivider:first-of-type ul {
     justify-content: flex-start;
   }
+  h1 {
+    margin: 0;
+    text-align: left;
+  }
+  .intro hgroup p {
+    left: auto;
+    transform: translateY(-50%);
+  }
   .intro .imgContainer {
     bottom: 60%;
     transform: translate(-85%, 50%);
@@ -138,9 +146,3 @@
     }
   }
 }
-
-// For larger screens:
-// .animalBackdrop {
-//     height: 17rem;
-//     width: 17rem;
-// }

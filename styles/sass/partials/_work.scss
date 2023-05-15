@@ -1,0 +1,63 @@
+@use "../variables" as *;
+
+.work {
+  display: flex;
+  flex-direction: column-reverse;
+  h2 {
+    color: $colorLight2;
+  }
+  .workShowcase {
+    position: relative;
+    display: none;
+    hgroup {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $colorLight1;
+    }
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    hgroup p {
+      position: relative;
+      font-size: 1rem;
+    }
+  }
+  .activeShowcase {
+    display: block;
+    height: 100%;
+    .imgContainer {
+      min-width: 100%;
+      height: calc(100% / 3);
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: .8rem;
+    li {
+        margin: 1rem .5rem;
+    }
+    .activeWork{
+        color: $colorPrimary;
+        font-weight: 700;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .work {
+    flex-direction: row-reverse;
+    .workShowcase hgroup {
+        left: 100%;
+        width: 15rem;
+        color: $colorPrimary;
+    }
+  }
+}

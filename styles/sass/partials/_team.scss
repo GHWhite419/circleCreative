@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+.team {
+  display: flex;
+  flex-direction: column-reverse;
+  .contentDivider:first-of-type {
+    .imgContainer {
+      margin: 1rem auto;
+      max-width: 5rem;
+    }
+    hgroup p {
+      color: $colorDark1;
+    }
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+      color: $colorLight2;
+    }
+  }
+
+  .contentDivider:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h2 {
+    color: $colorLight2;
+  }
+  .contentDivider:last-of-type .imgContainer {
+    position: relative;
+    width: 50%;
+    min-width: 50%;
+    height: 50%;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    h3,
+    p,
+    ul {
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    flex-direction: row-reverse;
+  }
+}
