@@ -1,0 +1,89 @@
+@use "../variables" as *;
+
+.process {
+  .contentDivider:first-of-type {
+    background-color: $colorPrimary;
+  }
+  h2 {
+    color: $colorLight1;
+  }
+  hgroup p {
+    width: 8rem;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: $colorLight1;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+  li {
+    margin-top: 1rem;
+  }
+  article {
+    display: none;
+  }
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  article p {
+    font-size: 0.85rem;
+    color: $colorLight2;
+    text-align: center;
+  }
+  .activeProcessInfo {
+    display: block;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+  .imgContainer {
+    position: absolute;
+    left: 50%;
+    top: -4rem;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 8rem;
+    p {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $colorLight1;
+      margin: 0;
+    }
+    img {
+      border-radius: 100%;
+      height: 100%;
+      filter: grayscale(1) brightness(0.6);
+    }
+  }
+  .processArrows {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .process .imgContainer {
+    top: 10%;
+    left: 0;
+  }
+  .process h3,
+  .process article p {
+    text-align: left;
+  }
+  .process .processArrows {
+    position: absolute;
+    right: 3rem;
+    padding-bottom: 4rem;
+    width: 8rem;
+  }
+}
