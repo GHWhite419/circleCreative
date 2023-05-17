@@ -254,6 +254,10 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 section {
   min-height: 100vh;
   position: relative;
@@ -327,7 +331,8 @@ em {
   .contentDivider {
     width: 50%;
   }
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 4rem;
   }
   hgroup p {
@@ -1104,8 +1109,8 @@ header i {
   width: 10rem;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .contact .imgContainer:not(.contentDivider .imgContainer) img {
   position: relative;
@@ -1115,28 +1120,39 @@ header i {
           transform: translate(-50%, -50%);
   padding: 1.5rem;
 }
+.contact .contentDivider:last-of-type .wrapper {
+  text-align: center;
+}
 .contact h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 5px;
+  font-size: 0.85rem;
+}
+.contact article:first-of-type {
+  border-bottom: 1px solid #a4a4a4;
+  padding-bottom: 1rem;
+}
+.contact q {
+  font-size: 0.77rem;
+  font-style: italic;
+}
+.contact q::before {
+  padding-right: 0.5rem;
   font-size: 1rem;
 }
-.contact .contentDivider:last-of-type ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contact q::after {
+  padding-left: 0.5rem;
+  font-size: 1rem;
 }
-.contact .contentDivider:last-of-type li {
-  color: #F7484E;
-}
-.contact .contentDivider:last-of-type li:first-of-type {
+.contact article:first-of-type li:first-of-type {
   width: 3rem;
   height: 3rem;
   border-radius: 100%;
   overflow: hidden;
 }
-.contact .contentDivider:last-of-type li:first-of-type img {
+.contact article:first-of-type li:first-of-type img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1146,4 +1162,124 @@ header i {
      object-position: 3px -2px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+.contact article:first-of-type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact article:first-of-type ul li:nth-of-type(2) {
+  font-family: "Oswald", sans-serif;
+  color: #F7484E;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.contact article:first-of-type ul li:last-of-type {
+  color: #a4a4a4;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+.contact article:last-of-type {
+  padding-top: 1rem;
+}
+.contact article:last-of-type li {
+  color: #a4a4a4;
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+}
+.contact article:last-of-type a {
+  color: #F7484E;
+  text-decoration: none;
+  display: block;
+}
+.contact .fa-ul {
+  margin: 0;
+}
+.contact .fa-li {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .contact .imgContainer:not(.contentDivider .imgContainer) {
+    -webkit-transform: translate(-50, -50%);
+            transform: translate(-50, -50%);
+  }
+  .contact .contentDivider:last-of-type .wrapper {
+    text-align: left;
+    width: 62%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 1.5rem;
+  }
+  .contact .contentDivider:last-of-type .wrapper ul {
+    text-align: left;
+  }
+  .contact article:first-of-type ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact article:first-of-type ul li {
+    margin-right: 1rem;
+  }
+  .contact article:first-of-type ul li:first-of-type {
+    margin-right: 2rem;
+  }
+  .contact .fa-ul {
+    margin-left: var(--fa-li-margin, 2.5em);
+  }
+  .contact .fa-ul li {
+    padding-left: 1rem;
+  }
+  .contact .fa-li {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 85%;
+  max-width: 17.5rem;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer p {
+  font-size: 0.75rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+footer a {
+  color: #F7484E;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    right: 2.25rem;
+    -webkit-transform: none;
+            transform: none;
+    width: auto;
+  }
+  footer ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }

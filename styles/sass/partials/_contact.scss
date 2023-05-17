@@ -34,7 +34,7 @@
     width: 10rem;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     img {
       position: relative;
       top: 50%;
@@ -43,22 +43,35 @@
       padding: 1.5rem;
     }
   }
+
+  .contentDivider:last-of-type .wrapper {
+    text-align: center;
+  }
+
   h3 {
     font-family: $fontSecondary;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 5px;
-    font-size: 1rem;
+    font-size: .85rem;
   }
-  .contentDivider:last-of-type {
-    ul {
-      display: flex;
+  article:first-of-type {
+    border-bottom: 1px solid $colorLight2;
+    padding-bottom: 1rem;
+  }
+  q {
+    font-size: 0.77rem;
+    font-style: italic;
+    &::before {
+      padding-right: 0.5rem;
+      font-size: 1rem;
     }
-    li {
-      color: $colorPrimary;
+    &::after {
+      padding-left: 0.5rem;
+      font-size: 1rem;
     }
   }
-  .contentDivider:last-of-type li:first-of-type {
+  article:first-of-type li:first-of-type {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
@@ -71,8 +84,73 @@
       filter: grayscale(1);
     }
   }
+  article:first-of-type ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li:nth-of-type(2) {
+      font-family: $fontSecondary;
+      color: $colorPrimary;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    li:last-of-type {
+      color: $colorLight2;
+      font-style: italic;
+      font-size: 0.7rem;
+    }
+  }
+  article:last-of-type {
+    padding-top: 1rem;
+    li {
+      color: $colorLight2;
+      margin: .5rem 0;
+      font-size: .75rem;
+    }
+    a {
+      color: $colorPrimary;
+      text-decoration: none;
+      display: block;
+    }
+  }
+  .fa-ul {
+    margin: 0;
+  }
+  .fa-li {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
-    
+  .contact .imgContainer:not(.contentDivider .imgContainer) {
+    transform: translate(-50, -50%);
+  }
+  .contact .contentDivider:last-of-type .wrapper {
+    text-align: left;
+    width: 62%;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
+    ul {
+      text-align: left;
+    }
+  }
+  .contact article:first-of-type ul {
+    justify-content: flex-start;
+    li {
+      margin-right: 1rem;
+    }
+    li:first-of-type {
+      margin-right: 2rem;
+    }
+  }
+  .contact .fa-ul {
+    margin-left: var(--fa-li-margin, 2.5em);
+    li {
+        padding-left: 1rem;
+    }
+  }
+  .contact .fa-li {
+    display: inline;
+    margin-right: 0.5rem;
+  }
 }

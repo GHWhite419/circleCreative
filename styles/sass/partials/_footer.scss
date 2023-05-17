@@ -1,0 +1,35 @@
+@use "../variables" as *;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 85%;
+  max-width: 17.5rem;
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  p {
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+  }
+  a {
+    color: $colorPrimary;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    right: 2.25rem;
+    transform: none;
+    width: auto;
+    ul {
+        justify-content: space-between;
+    }
+  }
+}

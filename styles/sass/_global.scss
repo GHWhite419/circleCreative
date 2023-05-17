@@ -1,5 +1,7 @@
 @use "./variables" as *;
-
+body {
+  position: relative;
+}
 section {
   min-height: 100vh;
   position: relative;
@@ -61,7 +63,8 @@ em {
   .contentDivider {
     width: 50%;
   }
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 4rem;
   }
   hgroup p {
