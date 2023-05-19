@@ -51,13 +51,29 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 775px) {
   .work {
     flex-direction: row-reverse;
     .workShowcase hgroup {
         left: 100%;
         width: 15rem;
         color: $colorPrimary;
+    }
+    ul {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    ul li {
+      width: calc(100% / 2 - 1rem);
+    }
+  }
+}
+
+@media (min-width: 835px) {
+  .work ul {
+    text-align: left;
+    li {
+      width: auto;
     }
   }
 }

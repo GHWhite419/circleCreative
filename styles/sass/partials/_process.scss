@@ -37,9 +37,6 @@
   }
   .activeProcessInfo {
     display: block;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
   }
   .imgContainer {
     position: absolute;
@@ -68,10 +65,11 @@
   .processArrows {
     display: flex;
     justify-content: space-between;
+    padding-top: 1.5rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 775px) {
   .process .imgContainer {
     top: 10%;
     left: 0;
@@ -80,10 +78,32 @@
   .process article p {
     text-align: left;
   }
+}
+
+@media (min-width: 1075px) {
   .process .processArrows {
     position: absolute;
     right: 3rem;
+    padding-top: 0;
     padding-bottom: 4rem;
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1123px) {
+  .process .processArrows {
+    margin: 0;
+  }
+}
+@media (min-width: 1140px) {
+  .process .processArrows {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .process .processArrows {
     width: 8rem;
   }
 }

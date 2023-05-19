@@ -58,7 +58,24 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 775px) {
+  .client ul {
+    flex-wrap: wrap;
+    li {
+      max-width: 4rem;
+    }
+  }
+}
+
+@media (min-width: 915px) {
+  .client ul {
+    li {
+      max-width: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1050px) {
   .client {
     .imgContainer {
       margin: 0;

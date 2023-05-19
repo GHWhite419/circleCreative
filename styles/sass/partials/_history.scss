@@ -46,18 +46,42 @@
   }
 }
 
-@media (min-width: 1200px) {
-    .history .imgContainer {
-        top: 5%;
+@media (min-width: 775px) {
+  .history .imgContainer {
+    top: 5%;
+    width: 6rem;
+    height: 6rem;
+    img {
+      object-position: -1.8rem 1.4rem;
     }
-    .historyText {
-        display: flex;
-        justify-content: space-between;
-        article {
-            width: calc(100% / 2 - 1rem);
-        }
+  }
+  .history h3 {
+    padding-top: 8rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 820px) {
+  // h3 and img can now expand
+  .history h3 {
+    font-size: 2.25rem;
+  }
+  .history .imgContainer {
+    width: 8rem;
+    height: 8rem;
+    img {
+      object-position: -2.3rem 1.8rem;
     }
-    .history h3 {
-      padding-top: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  // Text should go side-by-side now
+  .historyText {
+    display: flex;
+    justify-content: space-between;
+    article {
+      width: calc(100% / 2 - 1rem);
     }
+  }
 }

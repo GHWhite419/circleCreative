@@ -69,9 +69,8 @@
     }
   }
 }
-// From 500-533 px, text should go sideways
 
-@media (min-width: 1200px) {
+@media (min-width: 775px) {
   .team {
     flex-direction: row-reverse;
     .contentDivider:last-of-type .imgContainer hgroup {

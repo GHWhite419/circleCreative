@@ -120,18 +120,23 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .intro .contentDivider:first-of-type ul {
-    justify-content: flex-start;
-  }
+@media (min-width: 775px) {
   h1 {
     margin: 0;
     text-align: left;
+    font-size: 3.5rem;
   }
   .intro hgroup p {
     left: auto;
     transform: translateY(-50%);
+    font-size: 1.5rem;
   }
+.intro .imgContainer {
+  bottom: 18%;
+}
+}
+
+@media (min-width: 990px) {
   .intro .imgContainer {
     bottom: 60%;
     transform: translate(-85%, 50%);
@@ -144,5 +149,26 @@
     .birdImages .animalCutout {
       left: 80%;
     }
+    .contentDivider:last-of-type .wrapper h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro .contentDivider:last-of-type .wrapper h3 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .intro hgroup p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  .intro .contentDivider:first-of-type ul {
+    justify-content: flex-start;
   }
 }
