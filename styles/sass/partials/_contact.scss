@@ -53,7 +53,7 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 5px;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   article:first-of-type {
     border-bottom: 1px solid $colorLight2;
@@ -104,8 +104,8 @@
     padding-top: 1rem;
     li {
       color: $colorLight2;
-      margin: .5rem 0;
-      font-size: .75rem;
+      margin: 0.5rem 0;
+      font-size: 0.75rem;
     }
     a {
       color: $colorPrimary;
@@ -123,11 +123,11 @@
 
 @media (min-width: 775px) {
   .contact .imgContainer:not(.contentDivider .imgContainer) {
-    transform: translate(-50, -50%);
+    top: 75%;
   }
   .contact .contentDivider:last-of-type .wrapper {
     text-align: left;
-    width: 62%;
+    width: 79%;
     justify-content: flex-start;
     padding-top: 1.5rem;
     ul {
@@ -146,11 +146,20 @@
   .contact .fa-ul {
     margin-left: var(--fa-li-margin, 2.5em);
     li {
-        padding-left: 1rem;
+      padding-left: 1rem;
     }
   }
   .contact .fa-li {
     display: inline;
     margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1125px) {
+  .contact .imgContainer:not(.contentDivider .imgContainer) {
+    top: 50%;
+  }
+  .contact .contentDivider:last-of-type .wrapper {
+    width: 62%;
   }
 }

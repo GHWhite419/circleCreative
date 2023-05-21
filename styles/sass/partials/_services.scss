@@ -71,11 +71,25 @@
 
 @media (min-width: 775px) {
   .services .serviceInfo {
+    h3 {
+      text-align: center;
+    }
+    article {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1030px) {
+  .services .serviceInfo {
     .imgContainer {
       margin: 0;
     }
     article {
       width: 75%;
+      text-align: left;
+    }
+    h3 {
       text-align: left;
     }
   }

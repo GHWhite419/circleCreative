@@ -839,11 +839,22 @@ header i {
 }
 
 @media (min-width: 775px) {
+  .services .serviceInfo h3 {
+    text-align: center;
+  }
+  .services .serviceInfo article {
+    text-align: left;
+  }
+}
+@media (min-width: 1030px) {
   .services .serviceInfo .imgContainer {
     margin: 0;
   }
   .services .serviceInfo article {
     width: 75%;
+    text-align: left;
+  }
+  .services .serviceInfo h3 {
     text-align: left;
   }
   .services .activeServiceInfo {
@@ -1302,12 +1313,11 @@ header i {
 
 @media (min-width: 775px) {
   .contact .imgContainer:not(.contentDivider .imgContainer) {
-    -webkit-transform: translate(-50, -50%);
-            transform: translate(-50, -50%);
+    top: 75%;
   }
   .contact .contentDivider:last-of-type .wrapper {
     text-align: left;
-    width: 62%;
+    width: 79%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1336,6 +1346,14 @@ header i {
   .contact .fa-li {
     display: inline;
     margin-right: 0.5rem;
+  }
+}
+@media (min-width: 1125px) {
+  .contact .imgContainer:not(.contentDivider .imgContainer) {
+    top: 50%;
+  }
+  .contact .contentDivider:last-of-type .wrapper {
+    width: 62%;
   }
 }
 footer {
