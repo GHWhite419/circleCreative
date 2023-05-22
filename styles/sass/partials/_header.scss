@@ -19,6 +19,11 @@ header {
     padding: .5rem;
     border-radius: 100%;
     font-size: .75rem;
+    &:hover, &:active, &:focus-visible {
+      color: $colorPrimary;
+      border-color: $colorPrimary;
+      outline: none;
+    }
   }
 }
 

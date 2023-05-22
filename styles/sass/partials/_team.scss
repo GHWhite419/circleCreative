@@ -35,6 +35,9 @@
       height: 100%;
       object-fit: cover;
     }
+    &:hover img {
+      filter: grayscale(0);
+    }
     hgroup,
     ul {
       position: absolute;
@@ -66,6 +69,10 @@
       justify-content: space-evenly;
       width: 100%;
       padding: 0 1rem;
+    }
+    li:hover, li:active, i:focus-visible {
+      color: $colorPrimary;
+      outline: none;
     }
   }
 }

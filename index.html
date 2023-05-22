@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Creative</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
     <header>
       <div class="wrapper">
         <div class="headerIcons">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-share-nodes"></i>
+          <i tabindex="0" class="fa-solid fa-magnifying-glass"></i>
+          <i tabindex="0" class="fa-solid fa-share-nodes"></i>
         </div>
         <div class="imgContainer">
           <img src="./assets/logo2.png" alt="Logo for Circle creative" />
@@ -30,12 +30,27 @@
             </hgroup>
             <nav>
               <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Services</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li>
+                  <a href="#history"> History </a>
+                </li>
+                <li>
+                  <a href="#work"> Work </a>
+                </li>
+                <li>
+                  <a href="#services"> Services </a>
+                </li>
+                <li>
+                  <a href="#team"> Team </a>
+                </li>
+                <li>
+                  <a href="#process"> Process </a>
+                </li>
+                <li>
+                  <a href="#client"> Client </a>
+                </li>
+                <li>
+                  <a href="#contact"> Contact </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -78,21 +93,21 @@
             <h3>This is Bird</h3>
             <hr />
             <ul>
-              <li>
+              <li tabindex="0">
                 <p>01</p>
                 <img
                   src="./assets/introFoxSelect.jpg"
                   alt="A grassy hill sits beneath a clear blue sky."
                 />
               </li>
-              <li class="activeSelection">
+              <li tabindex="0" class="activeSelection">
                 <p>02</p>
                 <img
                   src="./assets/introBirdSelect.jpg"
                   alt="A line of snowy spruce trees huddle beneath a white sky."
                 />
               </li>
-              <li>
+              <li tabindex="0">
                 <p>03</p>
                 <img
                   src="./assets/introTurtleSelect.jpg"
@@ -103,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section class="history">
+      <section class="history" id="history">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -149,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -157,10 +172,10 @@
               <p>Our projects</p>
             </hgroup>
             <ul>
-              <li class="activeWork">Branding</li>
-              <li>Web design</li>
-              <li>Marketing</li>
-              <li>Interior</li>
+              <li tabindex="0" class="activeWork">Branding</li>
+              <li tabindex="0">Web design</li>
+              <li tabindex="0">Marketing</li>
+              <li tabindex="0">Interior</li>
             </ul>
           </div>
         </div>
@@ -263,7 +278,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -271,10 +286,10 @@
               <p>The best solutions</p>
             </hgroup>
             <ul>
-              <li class="activeService">Branding design</li>
-              <li>Marketing online</li>
-              <li>Project management</li>
-              <li>Web services</li>
+              <li tabindex="0" class="activeService">Branding design</li>
+              <li tabindex="0">Marketing online</li>
+              <li tabindex="0">Project management</li>
+              <li tabindex="0">Web services</li>
             </ul>
           </div>
         </div>
@@ -392,7 +407,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team" id="team">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -422,10 +437,34 @@
               alt="Headshot of Maria Juliet."
             />
             <ul class="social">
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-google-plus-g"></i></li>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-behance"></i></li>
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Maria's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Maria's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Maria's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Maria's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
             </ul>
           </div>
           <div class="imgContainer">
@@ -435,10 +474,34 @@
             </hgroup>
             <img src="./assets/teamPortrait2.jpg" alt="Headshot of John Dowd" />
             <ul class="social">
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-google-plus-g"></i></li>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-behance"></i></li>
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="John's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="John's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="John's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="John's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
             </ul>
           </div>
           <div class="imgContainer">
@@ -451,10 +514,34 @@
               alt="Headshot of Stacy Howard"
             />
             <ul class="social">
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-google-plus-g"></i></li>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-behance"></i></li>
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Stacy's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Stacy's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Stacy's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Stacy's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
             </ul>
           </div>
           <div class="imgContainer">
@@ -467,15 +554,40 @@
               alt="Headshot of Nathan Debeers"
             />
             <ul class="social">
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-google-plus-g"></i></li>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-behance"></i></li>
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Nathan's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Nathan's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Nathan's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Nathan's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="process">
+
+      <section class="process" id="process">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -483,10 +595,10 @@
               <p>Working process</p>
             </hgroup>
             <ul>
-              <li>01. Order reception</li>
-              <li>02. Design</li>
-              <li>03. Marketing</li>
-              <li>04. Completion</li>
+              <li tabindex="0" class="activeProcess">01. Order reception</li>
+              <li tabindex="0">02. Design</li>
+              <li tabindex="0">03. Marketing</li>
+              <li tabindex="0">04. Completion</li>
             </ul>
           </div>
         </div>
@@ -557,13 +669,20 @@
               </p>
             </article>
             <div class="processArrows">
-              <i class="fa-sharp fa-solid fa-arrow-left-long fa-xl"></i>
-              <i class="fa-sharp fa-solid fa-arrow-right-long fa-xl"></i>
+              <i
+                tabindex="0"
+                class="fa-sharp fa-solid fa-arrow-left-long fa-xl"
+              ></i>
+              <i
+                tabindex="0"
+                class="fa-sharp fa-solid fa-arrow-right-long fa-xl"
+              ></i>
             </div>
           </div>
         </div>
       </section>
-      <section class="client">
+
+      <section class="client" id="client">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -605,7 +724,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contentDivider">
           <div class="wrapper">
             <hgroup>
@@ -671,16 +790,45 @@
       </section>
     </main>
     <footer>
-      <!-- <div class="wrapper"> -->
-        <ul class="social">
-          <li><i class="fa-brands fa-facebook-f"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-youtube"></i></li>
-          <li><i class="fa-brands fa-google-plus-g"></i></li>
-          <li><i class="fa-brands fa-behance"></i></li>
-        </ul>
-        <p>Circle copyright 2016. Theme made by <a href="">moontheme</a></p>
-      <!-- </div> -->
+      <ul class="social">
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-facebook-f"
+            aria-label="Facebook profile - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-twitter"
+            aria-label="Twitter account - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-youtube"
+            aria-label="Youtube channel - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-google-plus-g"
+            aria-label="Google plus profile - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-behance"
+            aria-label="Behance account - Placeholder"
+          ></i>
+        </li>
+      </ul>
+      <p>
+        Circle &#169;copyright 2016. Theme made by
+        <a href="https://themeforest.net/user/moontheme" target="_blank"
+          >moontheme
+          <span class="sr-only">Opens in new tab</span>
+        </a>
+      </p>
     </footer>
     <script
       src="https://kit.fontawesome.com/e4f1610b04.js"

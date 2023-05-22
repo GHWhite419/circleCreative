@@ -11,6 +11,10 @@ footer {
     display: flex;
     justify-content: space-around;
   }
+  li:hover, li:focus-visible, li:active {
+    color: $colorPrimary;
+    outline: none;
+  }
   p {
     font-size: 0.75rem;
     text-align: center;

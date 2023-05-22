@@ -17,6 +17,10 @@
     li {
       margin-top: 0.75rem;
     }
+    li:hover, li:active, li:focus-visible {
+      color: $colorPrimary;
+      outline: none;
+    }
     .activeService {
       color: $colorPrimary;
       font-weight: 600;

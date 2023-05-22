@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;600&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap");
 
-$fontPrimary:'Raleway', sans-serif;
-$fontSecondary: 'Oswald', sans-serif;
+$fontPrimary: "Raleway", sans-serif;
+$fontSecondary: "Oswald", sans-serif;
+$fontTertiary: "Open Sans", sans-serif;
 
-$colorPrimary: #F7484E;
+$colorPrimary: #f7484e;
 $colorDark1: #000;
 $colorDark2: #494648;
-$colorLight1: #FFF;
+$colorLight1: #fff;
 $colorLight2: #a4a4a4;
 
 html {
-    font-family: $fontPrimary;
+  font-family: $fontTertiary;
 }

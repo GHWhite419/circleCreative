@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@300;600&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -251,7 +251,7 @@ html {
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -284,6 +284,7 @@ section {
 
 h1,
 h2 {
+  font-family: "Raleway", sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
   max-width: 17rem;
@@ -317,7 +318,7 @@ br {
 }
 
 em {
-  color: #F7484E;
+  color: #f7484e;
   font-style: normal;
   font-weight: 600;
 }
@@ -386,6 +387,11 @@ header i {
   border-radius: 100%;
   font-size: 0.75rem;
 }
+header i:hover, header i:active, header i:focus-visible {
+  color: #f7484e;
+  border-color: #f7484e;
+  outline: none;
+}
 
 @media (min-width: 775px) and (min-height: 625px) {
   header img {
@@ -399,9 +405,19 @@ header i {
   color: #000;
 }
 .intro .contentDivider hgroup p {
-  color: #F7484E;
+  color: #f7484e;
   font-size: 1.75rem;
   min-width: 13rem;
+}
+.intro .contentDivider a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.intro .contentDivider a:hover, .intro .contentDivider a:active, .intro .contentDivider a:focus-visible {
+  color: #f7484e;
+  font-weight: 700;
 }
 .intro .contentDivider:first-of-type {
   background-color: #494648;
@@ -509,6 +525,9 @@ header i {
   border-radius: 100%;
   background-color: #a4a4a4;
 }
+.intro .contentDivider:last-of-type .wrapper li:hover img, .intro .contentDivider:last-of-type .wrapper li:active img, .intro .contentDivider:last-of-type .wrapper li:focus-visible img {
+  display: block;
+}
 .intro .contentDivider:last-of-type .wrapper li img {
   border-radius: 100%;
   height: 100%;
@@ -589,10 +608,10 @@ header i {
   }
 }
 .history .contentDivider:first-of-type {
-  background-color: #F7484E;
+  background-color: #f7484e;
 }
 .history h2 {
-  color: #FFF;
+  color: #fff;
 }
 .history .imgContainer {
   position: absolute;
@@ -633,7 +652,7 @@ header i {
   font-size: 0.75rem;
 }
 .history h4 span {
-  color: #F7484E;
+  color: #f7484e;
   padding-right: 0.5rem;
 }
 
@@ -699,7 +718,7 @@ header i {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #FFF;
+  color: #fff;
 }
 .work .workShowcase h3 {
   margin-bottom: 1rem;
@@ -735,8 +754,12 @@ header i {
 .work ul li {
   margin: 1rem 0.5rem;
 }
+.work ul li:hover, .work ul li:active, .work ul li:focus-visible {
+  color: #f7484e;
+  outline: none;
+}
 .work ul .activeWork {
-  color: #F7484E;
+  color: #f7484e;
   font-weight: 700;
 }
 
@@ -750,7 +773,7 @@ header i {
   .work .workShowcase hgroup {
     left: 100%;
     width: 15rem;
-    color: #F7484E;
+    color: #f7484e;
   }
   .work ul {
     -ms-flex-wrap: wrap;
@@ -793,12 +816,16 @@ header i {
 .services .contentDivider:first-of-type li {
   margin-top: 0.75rem;
 }
+.services .contentDivider:first-of-type li:hover, .services .contentDivider:first-of-type li:active, .services .contentDivider:first-of-type li:focus-visible {
+  color: #f7484e;
+  outline: none;
+}
 .services .contentDivider:first-of-type .activeService {
-  color: #F7484E;
+  color: #f7484e;
   font-weight: 600;
 }
 .services hgroup p {
-  color: #FFF;
+  color: #fff;
 }
 .services .serviceInfo {
   display: none;
@@ -832,7 +859,7 @@ header i {
   margin-right: 0.5rem;
 }
 .services .serviceInfo li {
-  color: #F7484E;
+  color: #f7484e;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 0.85rem;
@@ -916,12 +943,16 @@ header i {
   width: 50%;
   min-width: 50%;
   height: 50%;
-  color: #FFF;
+  color: #fff;
 }
 .team .contentDivider:last-of-type .imgContainer img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.team .contentDivider:last-of-type .imgContainer:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .team .contentDivider:last-of-type .imgContainer hgroup,
 .team .contentDivider:last-of-type .imgContainer ul {
@@ -959,6 +990,10 @@ header i {
   width: 100%;
   padding: 0 1rem;
 }
+.team .contentDivider:last-of-type .imgContainer li:hover, .team .contentDivider:last-of-type .imgContainer li:active, .team .contentDivider:last-of-type .imgContainer i:focus-visible {
+  color: #f7484e;
+  outline: none;
+}
 
 @media (orientation: landscape) {
   .team .contentDivider:last-of-type .imgContainer img {
@@ -990,10 +1025,10 @@ header i {
   }
 }
 .process .contentDivider:first-of-type {
-  background-color: #F7484E;
+  background-color: #f7484e;
 }
 .process h2 {
-  color: #FFF;
+  color: #fff;
 }
 .process hgroup p {
   width: 8rem;
@@ -1007,13 +1042,20 @@ header i {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #FFF;
   font-size: 0.85rem;
-  font-weight: 600;
+  color: #fff;
   font-style: italic;
 }
 .process li {
   margin-top: 1rem;
+}
+.process li:hover, .process li:active, .process li:focus-visible {
+  font-weight: 600;
+  outline: none;
+}
+.process .activeProcess {
+  color: #fff;
+  font-weight: 600;
 }
 .process article {
   display: none;
@@ -1048,7 +1090,7 @@ header i {
   z-index: 10;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   margin: 0;
 }
 .process .imgContainer img {
@@ -1065,6 +1107,12 @@ header i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 1.5rem;
+}
+.process .processArrows i:hover,
+.process .processArrows i:active,
+.process .processArrows i:focus-visible {
+  color: #f7484e;
+  outline: none;
 }
 
 @media (min-width: 775px) and (min-height: 625px) {
@@ -1106,7 +1154,7 @@ header i {
   background-color: #494648;
 }
 .client hgroup p {
-  color: #FFF;
+  color: #fff;
   width: 9rem;
   text-align: center;
 }
@@ -1205,14 +1253,14 @@ header i {
   }
 }
 .contact .contentDivider:first-of-type {
-  background-color: #F7484E;
+  background-color: #f7484e;
 }
 .contact h2 {
-  color: #FFF;
+  color: #fff;
 }
 .contact .address {
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
   font-size: 0.85rem;
 }
@@ -1223,7 +1271,7 @@ header i {
   margin: 0.1rem 0;
 }
 .contact ul {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 0.85rem;
   line-height: 1.5rem;
@@ -1304,7 +1352,7 @@ header i {
 }
 .contact article:first-of-type ul li:nth-of-type(2) {
   font-family: "Oswald", sans-serif;
-  color: #F7484E;
+  color: #f7484e;
   text-transform: uppercase;
   font-size: 0.7rem;
 }
@@ -1322,7 +1370,7 @@ header i {
   font-size: 0.75rem;
 }
 .contact article:last-of-type a {
-  color: #F7484E;
+  color: #f7484e;
   text-decoration: none;
   display: block;
 }
@@ -1394,6 +1442,10 @@ footer ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+footer li:hover, footer li:focus-visible, footer li:active {
+  color: #f7484e;
+  outline: none;
+}
 footer p {
   font-size: 0.75rem;
   text-align: center;
@@ -1401,7 +1453,7 @@ footer p {
   text-transform: uppercase;
 }
 footer a {
-  color: #F7484E;
+  color: #f7484e;
   text-decoration: none;
 }
 
