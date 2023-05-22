@@ -446,7 +446,10 @@ header i:hover, header i:active, header i:focus-visible {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   z-index: 10;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .intro .imgContainer .animalBackdrop {
   border-radius: 100%;
@@ -460,7 +463,8 @@ header i:hover, header i:active, header i:focus-visible {
 }
 
 .intro .activeImage {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .intro .foxImages .animalCutout {
   bottom: 0;
