@@ -121,7 +121,7 @@
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   .contact .imgContainer:not(.contentDivider .imgContainer) {
     top: 75%;
   }
@@ -155,7 +155,7 @@
   }
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 1125px) and (min-height: 625px) {
   .contact .imgContainer:not(.contentDivider .imgContainer) {
     top: 50%;
   }

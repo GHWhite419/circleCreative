@@ -22,7 +22,7 @@ header {
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   header img {
     content: url(../assets/logo1.png);
   }

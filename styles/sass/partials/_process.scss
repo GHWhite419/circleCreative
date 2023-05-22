@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   .process .imgContainer {
     top: 10%;
     left: 0;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (min-width: 1075px) {
+@media (min-width: 1075px) and (min-height: 625px) {
   .process .processArrows {
     position: absolute;
     right: 3rem;
@@ -91,18 +91,18 @@
   }
 }
 
-@media (min-width: 1123px) {
+@media (min-width: 1123px) and (min-height: 625px) {
   .process .processArrows {
     margin: 0;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1140px) and (min-height: 625px) {
   .process .processArrows {
     width: 7rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 625px) {
   .process .processArrows {
     width: 8rem;
   }

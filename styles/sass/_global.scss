@@ -2,6 +2,7 @@
 body {
   position: relative;
 }
+
 section {
   min-height: 100vh;
   position: relative;
@@ -56,7 +57,25 @@ em {
   font-weight: 600;
 }
 
-@media (min-width: 775px) {
+@media (orientation: landscape) {
+  section {
+    min-height: 200vh;
+  }
+  .contentDivider {
+    height: 200vh;
+  }
+}
+
+@media (min-height: 565px) {
+  section {
+    min-height: 100vh;
+  }
+  .contentDivider {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 775px) and (min-height: 625px) {
   section {
     display: flex;
   }

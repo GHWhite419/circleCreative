@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   h1 {
     margin: 0;
     text-align: left;
@@ -136,7 +136,7 @@
 }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 990px) and (min-height: 625px) {
   .intro .imgContainer {
     bottom: 60%;
     transform: translate(-85%, 50%);
@@ -155,7 +155,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1100px) and (min-height: 625px) {
   .intro .contentDivider:last-of-type .wrapper h3 {
     font-size: 2rem;
   }
@@ -167,7 +167,7 @@
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1120px) and (min-height: 625px) {
   .intro .contentDivider:first-of-type ul {
     justify-content: flex-start;
   }

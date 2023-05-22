@@ -23,7 +23,7 @@ footer {
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   footer {
     right: 2.25rem;
     transform: none;

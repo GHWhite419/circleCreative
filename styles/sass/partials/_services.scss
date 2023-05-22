@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   .services .serviceInfo {
     h3 {
       text-align: center;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1030px) and (min-height: 625px) {
   .services .serviceInfo {
     .imgContainer {
       margin: 0;

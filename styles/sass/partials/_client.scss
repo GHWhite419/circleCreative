@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 775px) {
+@media (min-width: 775px) and (min-height: 625px) {
   .client ul {
     flex-wrap: wrap;
     li {
@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: 915px) {
+@media (min-width: 915px) and (min-height: 625px) {
   .client ul {
     li {
       max-width: 5rem;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1050px) and (min-height: 625px) {
   .client {
     .imgContainer {
       margin: 0;
