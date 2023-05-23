@@ -31,7 +31,10 @@
     font-weight: 600;
   }
   article {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
   }
   h3 {
     font-size: 2rem;
@@ -43,7 +46,9 @@
     text-align: center;
   }
   .activeProcessInfo {
-    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
   }
   .imgContainer {
     position: absolute;

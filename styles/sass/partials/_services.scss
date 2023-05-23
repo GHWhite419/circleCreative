@@ -30,7 +30,11 @@
     color: $colorLight1;
   }
   .serviceInfo {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    position: absolute;
+    width: 85%;
     .imgContainer {
       width: 5rem;
       height: 5rem;
@@ -70,6 +74,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    opacity: 1;
+    visibility: visible;
   }
 }
 

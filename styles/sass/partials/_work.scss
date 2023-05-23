@@ -7,8 +7,10 @@
     color: $colorLight2;
   }
   .workShowcase {
-    position: relative;
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease;
     hgroup {
       position: absolute;
       left: 50%;
@@ -27,6 +29,10 @@
   .activeShowcase {
     display: block;
     height: 100%;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+
     .imgContainer {
       min-width: 100%;
       height: calc(100% / 3);

@@ -502,11 +502,13 @@ header i:hover, header i:active, header i:focus-visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 8rem;
 }
 .intro .contentDivider:last-of-type .wrapper hr {
   width: 3rem;
   margin: 0;
   margin-left: 1rem;
+  margin-bottom: 8rem;
 }
 .intro .contentDivider:last-of-type .wrapper ul {
   display: -webkit-box;
@@ -714,8 +716,11 @@ header i:hover, header i:active, header i:focus-visible {
   color: #a4a4a4;
 }
 .work .workShowcase {
-  position: relative;
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .work .workShowcase hgroup {
   position: absolute;
@@ -735,6 +740,9 @@ header i:hover, header i:active, header i:focus-visible {
 .work .activeShowcase {
   display: block;
   height: 100%;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
 }
 .work .activeShowcase .imgContainer {
   min-width: 100%;
@@ -832,7 +840,12 @@ header i:hover, header i:active, header i:focus-visible {
   color: #fff;
 }
 .services .serviceInfo {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  width: 85%;
 }
 .services .serviceInfo .imgContainer {
   width: 5rem;
@@ -883,6 +896,8 @@ header i:hover, header i:active, header i:focus-visible {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (min-width: 775px) and (min-height: 625px) {
@@ -1062,7 +1077,11 @@ header i:hover, header i:active, header i:focus-visible {
   font-weight: 600;
 }
 .process article {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 .process h3 {
   font-size: 2rem;
@@ -1074,7 +1093,9 @@ header i:hover, header i:active, header i:focus-visible {
   text-align: center;
 }
 .process .activeProcessInfo {
-  display: block;
+  position: static;
+  opacity: 1;
+  visibility: visible;
 }
 .process .imgContainer {
   position: absolute;
