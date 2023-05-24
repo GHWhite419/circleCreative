@@ -1,0 +1,14 @@
+@use "./setup.scss";
+@use "./variables.scss" as *;
+@use "./global.scss";
+
+@use "./partials/header.scss";
+@use "./partials/intro.scss";
+@use "./partials/history.scss";
+@use "./partials/work.scss";
+@use "./partials/services.scss";
+@use "./partials/team.scss";
+@use "./partials/process.scss";
+@use "./partials/client.scss";
+@use "./partials/contact.scss";
+@use "./partials/footer.scss";

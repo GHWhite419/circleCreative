@@ -1,0 +1,76 @@
+@use "../variables" as *;
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .imgContainer {
+    width: 5rem;
+  }
+  i {
+    margin-right: 0.75rem;
+    color: $colorLight1;
+    border: 1px solid $colorLight1;
+    padding: 0.5rem;
+    border-radius: 100%;
+    font-size: 0.75rem;
+    &:hover,
+    &:active,
+    &:focus-visible {
+      color: $colorPrimary;
+      border-color: $colorPrimary;
+      outline: none;
+    }
+  }
+  .disabled {
+    color: #848383;
+    border-color: #848383;
+    &:hover,
+    &:active {
+      color: #848383;
+      border-color: #848383;
+    }
+  }
+  button i {
+    margin: 0;
+    position: relative;
+  }
+  .copyNotice {
+    position: absolute;
+    color: $colorPrimary;
+    font-family: $fontTertiary;
+    left: 7.5%;
+    cursor: default;
+    display: none;
+  }
+}
+
+@media (min-width: 625px) {
+  header {
+    .headerIcons {
+      display: flex;
+    }
+    button {
+      display: flex;
+      align-items: center;
+    }
+    .copyNotice {
+      position: relative;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 775px) and (min-height: 625px) {
+  header img {
+    content: url(../assets/logo1.png);
+  }
+  header .wrapper {
+    width: 92.5%;
+  }
+}

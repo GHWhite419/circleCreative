@@ -1,0 +1,101 @@
+@use "../variables" as *;
+
+.team {
+  display: flex;
+  flex-direction: column-reverse;
+  .contentDivider:first-of-type {
+    .imgContainer {
+      margin: 1rem auto;
+      max-width: 5rem;
+    }
+    hgroup p {
+      color: $colorDark1;
+    }
+    p {
+      font-size: 0.85rem;
+      text-align: center;
+      color: $colorLight2;
+    }
+  }
+
+  .contentDivider:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h2 {
+    color: $colorLight2;
+  }
+  .contentDivider:last-of-type .imgContainer {
+    position: relative;
+    width: 50%;
+    min-width: 50%;
+    height: 50%;
+    color: $colorLight1;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+    &:hover img {
+      filter: grayscale(0);
+    }
+    hgroup,
+    ul {
+      position: absolute;
+    }
+    hgroup {
+      bottom: 3rem;
+      text-align: center;
+      width: 100%;
+      z-index: 10;
+      font-size: 0.75rem;
+    }
+    h3 {
+      font-family: $fontSecondary;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+    hgroup p {
+      position: relative;
+      font-family: $fontPrimary;
+      text-transform: none;
+      font-style: italic;
+      color: $colorLight2;
+      padding-left: 1rem;
+    }
+    ul {
+      bottom: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0 1rem;
+    }
+    li:hover, li:active, i:focus-visible {
+      color: $colorPrimary;
+      outline: none;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .team .contentDivider:last-of-type .imgContainer img {
+    object-position: 0 -4rem;
+  }
+}
+
+@media (min-width: 775px) and (min-height: 625px) {
+  .team {
+    flex-direction: row-reverse;
+    .contentDivider:last-of-type .imgContainer hgroup {
+      writing-mode: sideways-lr;
+      top: 1rem;
+      bottom: auto;
+      width: auto;
+      text-align: left;
+    }
+    .contentDivider:last-of-type .imgContainer img {
+      object-position: top;
+      filter: brightness(0.5) grayscale(1);
+    }
+  }
+}

@@ -4,10 +4,1088 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Circle Creative</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   </head>
   <body>
-    
+    <header>
+      <div class="wrapper">
+        <div class="headerIcons">
+          <!-- This search icon is currently purely for decoration. I don't have a backend infrastructure for this conversion nor is the search option crucial for this page. However it is included in the design I worked with, therefore I will still include it with a "disabled" look.-->
+          <i class="fa-solid fa-magnifying-glass disabled"></i>
+          <button
+            class="shareButton"
+            aria-label="Share this site - copy url to clipboard."
+          >
+            <i class="fa-solid fa-share-nodes"></i>
+            <p class="copyNotice">Site URL copied to clipboard!</p>
+          </button>
+        </div>
+        <div class="imgContainer">
+          <img src="./assets/logo2.png" alt="Logo for Circle creative" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h1>Circle creative</h1>
+              <p>Welcome to Circle</p>
+            </hgroup>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#history"> History </a>
+                </li>
+                <li>
+                  <a href="#work"> Work </a>
+                </li>
+                <li>
+                  <a href="#services"> Services </a>
+                </li>
+                <li>
+                  <a href="#team"> Team </a>
+                </li>
+                <li>
+                  <a href="#process"> Process </a>
+                </li>
+                <li>
+                  <a href="#client"> Client </a>
+                </li>
+                <li>
+                  <a href="#contact"> Contact </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="imgContainer foxImages introAnimal activeImage">
+          <img
+            class="animalBackdrop"
+            src="./assets/introFoxBackdrop.jpg"
+            alt="A fox looks over its shoulder against a backdrop of a lush forest."
+          /><img
+            class="animalCutout"
+            src="./assets/introFoxImage.png"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="imgContainer birdImages introAnimal">
+          <img
+            class="animalBackdrop"
+            src="./assets/introBirdBackdrop.jpg"
+            alt="A seagull soars against a backdrop of a snowy mountain."
+          /><img
+            class="animalCutout"
+            src="./assets/introBirdImage.png"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="imgContainer turtleImages introAnimal">
+          <img
+            class="animalBackdrop"
+            src="./assets/introTurtleBackdrop.jpg"
+            alt="A sea turtle swimns against a backdrop of a coral reef."
+          /><img
+            class="animalCutout"
+            src="./assets/introTurtleImage.png"
+            aria-hidden="true"
+          />
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <h3>This is Fox</h3>
+            <hr />
+            <ul>
+              <li class="introSelector activeSelection">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the fox image.</span
+                  >
+                  <p>01</p>
+                  <img
+                    src="./assets/introFoxSelect.jpg"
+                    alt="A grassy hill sits beneath a clear blue sky."
+                  />
+                </button>
+              </li>
+              <li class="introSelector">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the bird image.</span
+                  >
+                  <p>02</p>
+                  <img
+                    src="./assets/introBirdSelect.jpg"
+                    alt="A line of snowy spruce trees huddle beneath a white sky."
+                  />
+                </button>
+              </li>
+              <li class="introSelector">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the turtle image.</span
+                  >
+                  <p>03</p>
+                  <img
+                    src="./assets/introTurtleSelect.jpg"
+                    alt="A sandy beach offers a long view of open sea."
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="history" id="history">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>History</h2>
+              <p>About us</p>
+            </hgroup>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <img
+            src="./assets/historyPortrait.jpg"
+            alt="Portrait of a man in sunglasses, gazing downward."
+          />
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <h3>Circle creative's history</h3>
+            <div class="historyText">
+              <article>
+                <h4><span>1</span>What we're about</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusantium illum ipsa <em>consequuntur</em> animi quos. A,
+                  quisquam corrupti, porro tempora placeat fuga ipsa nesciunt
+                  doloribus velit quaerat eligendi? Maxime, velit fugiat.
+                  <br />
+
+                  Lorem ipsum dolor sit amet consectetur
+                  <em>adipisicing</em> elit. Ducimus, beatae voluptatem repellat
+                  non est ab?
+                </p>
+              </article>
+              <article>
+                <h4><span>2</span>Our story</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ducimus, consequuntur placeat, dolorem mollitia quidem ullam
+                  voluptate voluptatum expedita temporibus esse dolor quo,
+                  asperiores praesentium perferendis at hic sequi odit? Odio.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Work</h2>
+              <p>Our projects</p>
+            </hgroup>
+            <ul>
+              <li class="activeWork">
+                <button>Branding</button>
+              </li>
+              <li>
+                <button>Web design</button>
+              </li>
+              <li>
+                <button>Marketing</button>
+              </li>
+              <li>
+                <button>Interior</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentDivider">
+          <div class="workShowcase workBranding activeShowcase">
+            <hgroup>
+              <h3>Muskoka brand design 2018</h3>
+              <p>Brand management album</p>
+            </hgroup>
+            <div class="imgContainer">
+              <img
+                src="./assets/work1.jpg"
+                alt="A collection of home ornaments arranged on a table with a DSLR camera."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work2.jpg"
+                alt="A man with headphones works on a desktop computer, selecting colors and fonts."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work3.jpg"
+                alt="A stack of books sits on a desk with a small coffee mug atop the stack."
+              />
+            </div>
+          </div>
+          <div class="workShowcase workWebDesign">
+            <hgroup>
+              <h3>Darunia web design 2021</h3>
+              <p>Web development portfolio 2021</p>
+            </hgroup>
+            <div class="imgContainer">
+              <img
+                src="./assets/work4.jpg"
+                alt="A man sits at a computer desk, web pages and coding software displaying on two monitors."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work5.jpg"
+                alt="A woman's hand holds a pen in the foreground, drawing up a web site design on a sketch pad. "
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work6.jpg"
+                alt="A closeup of a keyboard, behind which loom two computer monitors displaying vast amounts of code."
+              />
+            </div>
+          </div>
+          <div class="workShowcase workMarketing">
+            <hgroup>
+              <h3>Ostenhorm marketing campaign 2017</h3>
+              <p>Marketing report 2017</p>
+            </hgroup>
+            <div class="imgContainer">
+              <img
+                src="./assets/work7.jpg"
+                alt="A group of markers and marketing literature splayed across a wooden table."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work8.jpg"
+                alt="Close-up of a laptop displaying viewership metrics."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work9.jpg"
+                alt="A group of people sit in a boardroom around a table with their laptops as a man stands and delivers a presentation."
+              />
+            </div>
+          </div>
+          <div class="workShowcase workInterior">
+            <hgroup>
+              <h3>Kinnok design collection 2016</h3>
+              <p>Interior design collection 2016</p>
+            </hgroup>
+            <div class="imgContainer">
+              <img
+                src="./assets/work10.jpg"
+                alt="A bed lies beneath a pair of picture frames, each housing an abstract drawing of a female."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work11.jpg"
+                alt="Wide shot of a kitchen, sunlight shining in through a very large window."
+              />
+            </div>
+            <div class="imgContainer">
+              <img
+                src="./assets/work12.jpg"
+                alt="A living room furnished with a sofa, plants, pictures, and two mounted faux stag heads."
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Services</h2>
+              <p>The best solutions</p>
+            </hgroup>
+            <ul class="serviceSelector">
+              <li class="activeService">
+                <button>Branding design</button>
+              </li>
+              <li>
+                <button>Marketing online</button>
+              </li>
+              <li>
+                <button>Project management</button>
+              </li>
+              <li>
+                <button>Web services</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <div class="serviceInfo serviceBranding activeServiceInfo">
+              <div class="imgContainer">
+                <img
+                  src="./assets/service1.jpg"
+                  alt="A man at a desk sketches letters in varying calligraphy on a sketchpad, a DSLR camera at arm's reach."
+                />
+              </div>
+              <article>
+                <h3>Branding design</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat numquam, accusamus quam dolore dolor sequi rerum
+                  dolores, quos cupiditate illo atque natus dignissimos nesciunt
+                  maxime perspiciatis consequatur fugiat quaerat ipsam.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate quas provident minima unde ipsum deleniti
+                  <em>aliquam.</em> Ut tenetur, quia quis architecto impedit sed
+                  quae beatae quas consectetur neque error praesentium.
+                </p>
+                <ul>
+                  <li><span>1</span> Solutions</li>
+                  <li><span>2</span> Morbi mollis vestiblum</li>
+                  <li><span>3</span> Contacting services</li>
+                </ul>
+              </article>
+            </div>
+            <div class="serviceInfo serviceMarketing">
+              <div class="imgContainer">
+                <img
+                  src="./assets/service2.jpg"
+                  alt="A group of people gather with laptops at a table while a woman stands in front of a whiteboard with a collection of sticky notes."
+                />
+              </div>
+              <article>
+                <h3>Marketing online</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat numquam, accusamus quam dolore dolor sequi rerum
+                  dolores, quos cupiditate illo atque natus dignissimos nesciunt
+                  maxime perspiciatis consequatur fugiat quaerat ipsam.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate quas provident minima unde ipsum deleniti
+                  <em>aliquam.</em> Ut tenetur, quia quis architecto impedit sed
+                  quae beatae quas consectetur neque error praesentium.
+                </p>
+                <ul>
+                  <li><span>1</span> Solutions</li>
+                  <li><span>2</span> Morbi mollis vestiblum</li>
+                  <li><span>3</span> Contacting services</li>
+                </ul>
+              </article>
+            </div>
+            <div class="serviceInfo serviceProjects">
+              <div class="imgContainer">
+                <img
+                  src="./assets/service3.jpg"
+                  alt="Two people sit at a desk before laptops, both studying a sketch-pad with pens in hand."
+                />
+              </div>
+              <article>
+                <h3>Project manage</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat numquam, accusamus quam dolore dolor sequi rerum
+                  dolores, quos cupiditate illo atque natus dignissimos nesciunt
+                  maxime perspiciatis consequatur fugiat quaerat ipsam.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate quas provident minima unde ipsum deleniti
+                  <em>aliquam.</em> Ut tenetur, quia quis architecto impedit sed
+                  quae beatae quas consectetur neque error praesentium.
+                </p>
+                <ul>
+                  <li><span>1</span> Solutions</li>
+                  <li><span>2</span> Morbi mollis vestiblum</li>
+                  <li><span>3</span> Contacting services</li>
+                </ul>
+              </article>
+            </div>
+            <div class="serviceInfo serviceWeb">
+              <div class="imgContainer">
+                <img
+                  src="./assets/service4.jpg"
+                  alt="A team of five people sit around a table, wearing headphones as they work in coding software on their laptops."
+                />
+              </div>
+              <article>
+                <h3>Web services</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Placeat numquam, accusamus quam dolore dolor sequi rerum
+                  dolores, quos cupiditate illo atque natus dignissimos nesciunt
+                  maxime perspiciatis consequatur fugiat quaerat ipsam.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cupiditate quas provident minima unde ipsum deleniti
+                  <em>aliquam.</em> Ut tenetur, quia quis architecto impedit sed
+                  quae beatae quas consectetur neque error praesentium.
+                </p>
+                <ul>
+                  <li><span>1</span> Solutions</li>
+                  <li><span>2</span> Morbi mollis vestiblum</li>
+                  <li><span>3</span> Contacting services</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Team</h2>
+              <p>Our team</p>
+            </hgroup>
+            <div class="imgContainer">
+              <img
+                src="./assets/logoPartner1.png"
+                alt="Logo for our creative partners, Peterson & Stephanie."
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, ipsa maiores blanditiis neque nam officia.
+            </p>
+          </div>
+        </div>
+        <div class="contentDivider">
+          <div class="imgContainer">
+            <hgroup>
+              <h3>Maria Juliet</h3>
+              <p>Lead stylist</p>
+            </hgroup>
+            <img
+              src="./assets/teamPortrait1.jpg"
+              alt="Headshot of Maria Juliet."
+            />
+            <ul class="social">
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Maria's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Maria's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Maria's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Maria's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+            </ul>
+          </div>
+          <div class="imgContainer">
+            <hgroup>
+              <h3>John Dowd</h3>
+              <p>Circle CEO</p>
+            </hgroup>
+            <img src="./assets/teamPortrait2.jpg" alt="Headshot of John Dowd" />
+            <ul class="social">
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="John's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="John's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="John's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="John's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+            </ul>
+          </div>
+          <div class="imgContainer">
+            <hgroup>
+              <h3>Stacy Howard</h3>
+              <p>Service manager</p>
+            </hgroup>
+            <img
+              src="./assets/teamPortrait3.jpg"
+              alt="Headshot of Stacy Howard"
+            />
+            <ul class="social">
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Stacy's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Stacy's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Stacy's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Stacy's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+            </ul>
+          </div>
+          <div class="imgContainer">
+            <hgroup>
+              <h3>Nathan Debeers</h3>
+              <p>Marketing manager</p>
+            </hgroup>
+            <img
+              src="./assets/teamPortrait4.jpg"
+              alt="Headshot of Nathan Debeers"
+            />
+            <ul class="social">
+              <li>
+                <i
+                  class="fa-brands fa-twitter"
+                  aria-label="Nathan's Twitter - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-google-plus-g"
+                  aria-label="Nathan's Google Plus - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-facebook-f"
+                  aria-label="Nathan's Facebook - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-behance"
+                  aria-label="Nathan's Behance - Placeholder"
+                  tabindex="0"
+                ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Process</h2>
+              <p>Working process</p>
+            </hgroup>
+            <ul>
+              <li class="activeProcess">
+                <button>01. Order reception</button>
+              </li>
+              <li>
+                <button>02. Design</button>
+              </li>
+              <li>
+                <button>03. Marketing</button>
+              </li>
+              <li>
+                <button>04. Completion</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <article class="processInfo processReception activeProcessInfo">
+              <div class="imgContainer">
+                <p>01.</p>
+                <img
+                  src="./assets/process1.jpg"
+                  alt="A cell phone lies on a wooden table, screen bright to show a new order."
+                />
+              </div>
+              <h3>Order reception</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, fuga blanditiis dolore accusamus porro temporibus
+                praesentium distinctio amet, voluptates unde explicabo ducimus
+                ipsum animi at in suscipit fugiat eaque. Quam?
+              </p>
+            </article>
+            <article class="processInfo processDesign">
+              <div class="imgContainer">
+                <p>02.</p>
+                <img
+                  src="./assets/process2.jpg"
+                  alt="A computer monitor shows a graphic design program, offering options for colors and other stylistic choices."
+                />
+              </div>
+              <h3>Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, fuga blanditiis dolore accusamus porro temporibus
+                praesentium distinctio amet, voluptates unde explicabo ducimus
+                ipsum animi at in suscipit fugiat eaque. Quam?
+              </p>
+            </article>
+            <article class="processInfo processMarketing">
+              <div class="imgContainer">
+                <p>03.</p>
+                <img
+                  src="./assets/process3.jpg"
+                  alt="A close-up of a web-page showing web traffic graphs and statistics."
+                />
+              </div>
+              <h3>Marketing</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, fuga blanditiis dolore accusamus porro temporibus
+                praesentium distinctio amet, voluptates unde explicabo ducimus
+                ipsum animi at in suscipit fugiat eaque. Quam?
+              </p>
+            </article>
+            <article class="processInfo processCompletion">
+              <div class="imgContainer">
+                <p>04.</p>
+                <img
+                  src="./assets/process4.jpg"
+                  alt="Two people clink champaigne glasses together."
+                />
+              </div>
+              <h3>Completion</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente, fuga blanditiis dolore accusamus porro temporibus
+                praesentium distinctio amet, voluptates unde explicabo ducimus
+                ipsum animi at in suscipit fugiat eaque. Quam?
+              </p>
+            </article>
+            <div class="processArrows">
+              <button
+                aria-label="Display the previous article."
+                class="leftArrow"
+              >
+                <i class="fa-sharp fa-solid fa-arrow-left-long fa-xl"></i>
+              </button>
+              <button aria-label="Display the next article." class="rightArrow">
+                <i class="fa-sharp fa-solid fa-arrow-right-long fa-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="client" id="client">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Clients</h2>
+              <p>What our clients say</p>
+            </hgroup>
+          </div>
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <div class="testimonial">
+              <div class="imgContainer">
+                <img
+                  src="./assets/clientPortrait.jpg"
+                  alt="Headshot of Margaret Keller."
+                />
+              </div>
+              <article>
+                <q
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+                  itaque a, aperiam facilis mollitia provident.</q
+                >
+                <p>Margaret Keller</p>
+              </article>
+            </div>
+            <ul>
+              <span class="sr-only"
+                >These are some companies that are very happy with our work:
+              </span>
+              <li><img src="./assets/logoPartner2.png" alt="University" /></li>
+              <li>
+                <img src="./assets/logoPartner3.png" alt="Tasty treats" />
+              </li>
+              <li><img src="./assets/logoPartner4.png" alt="Crab bar" /></li>
+              <li>
+                <img src="./assets/logoPartner5.png" alt="Bicycle company" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contentDivider">
+          <div class="wrapper">
+            <hgroup>
+              <h2>Contact</h2>
+              <p>Contact us</p>
+            </hgroup>
+            <p class="address">
+              <span>Circle</span> Creative studios
+              <br />
+              PO box 16122 Collins Victoria 3000 Australia
+            </p>
+            <ul>
+              <li>Email: info@circle.abcdf.com</li>
+              <li>Phone: +33 323 34522</li>
+              <li>Fax: +33 3467888</li>
+            </ul>
+          </div>
+        </div>
+        <div class="imgContainer">
+          <img src="./assets/logo2.png" alt="Logo for Circle creative" />
+        </div>
+        <div class="contentDivider">
+          <div class="wrapper">
+            <article>
+              <h3>About</h3>
+              <q
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+                architecto itaque perspiciatis at, aspernatur esse.</q
+              >
+              <ul>
+                <li>
+                  <img
+                    src="./assets/contactPortrait.jpg"
+                    alt="Headshot of Graham McKinlay."
+                  />
+                </li>
+                <li>Graham McKinlay</li>
+                <li>Circle CEO</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Featured Tweets</h3>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li"
+                    ><i class="fa-brands fa-twitter fa-lg"></i
+                  ></span>
+                  Fresh education and HTML courses - UniLearn!
+                  <a href="#">http://www.trade.sample.com/</a>
+                </li>
+                <li>
+                  <span class="fa-li"
+                    ><i class="fa-brands fa-twitter fa-lg"></i
+                  ></span>
+                  Glad to read this review. It feels like the hard work that
+                  went into making this product is paying off.
+                  <a href="">https://acoustics.example.com/back.html</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="social">
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-facebook-f"
+            aria-label="Facebook profile - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-twitter"
+            aria-label="Twitter account - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-youtube"
+            aria-label="Youtube channel - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-google-plus-g"
+            aria-label="Google plus profile - Placeholder"
+          ></i>
+        </li>
+        <li tabindex="0">
+          <i
+            class="fa-brands fa-behance"
+            aria-label="Behance account - Placeholder"
+          ></i>
+        </li>
+      </ul>
+      <p>
+        Circle &#169;copyright 2016. Theme made by
+        <a href="https://themeforest.net/user/moontheme" target="_blank"
+          >moontheme
+          <span class="sr-only">Opens in new tab</span>
+        </a>
+      </p>
+      <p>
+        <button class="openModal">
+          Photo credits <span class="sr-only">Opens modal</span>
+        </button>
+        - Website designed by
+        <a href="https://galenwhitecodes.tech" target="_blank"
+          >Galen White
+          <span class="sr-only">Opens in new tab</span>
+        </a>
+      </p>
+      <div class="creditsModal">
+        <span class="sr-only">All links will open in a new tab.</span>
+        <button class="closeModal" aria-label="Close this modal">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul>
+          <li>
+            All corporate logos by
+            <a href="https://themeforest.net/user/moontheme" target="_blank"
+              >moontheme</a
+            >
+            on
+            <a href="https://themeforest.net/" target="_blank">themeforest</a>
+          </li>
+          <li>
+            Intro - Animal cutouts by Vahya White (no profile) on
+            <a href="https://transparentpng.com" target="_blank"
+              >transparentpng.com</a
+            >
+          </li>
+          <li>
+            Intro - Landscape photos by
+            <a
+              href="https://unsplash.com/@sebastian_unrau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Sebastian Unrau</a
+            >,
+            <a
+              href="https://unsplash.com/@whongru?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Hongru Wang</a
+            >,
+            <a
+              href="https://unsplash.com/it/@sepoys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Rohit Tandon</a
+            >,
+            <a
+              href="https://unsplash.com/@thkelley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Thomas Kelley</a
+            >, and
+            <a
+              href="https://unsplash.com/@lopezrobin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Lopez Robin</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            History - Headshot by
+            <a
+              href="https://unsplash.com/es/@voneciacarswell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Vonecia Carswell</a
+            >
+            on
+            <a
+              href="
+              https://unsplash.com/"
+              target="_blank"
+              >Unsplash</a
+            >
+          </li>
+          <li>
+            Work - Photos by
+            <a
+              href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Jeff Sheldon</a
+            >,
+            <a
+              href="https://unsplash.com/@fazurrehman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Faizur Rehman</a
+            >,
+            <a
+              href="https://unsplash.com/@daniellajardim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Ella Jardim</a
+            >,
+            <a
+              href="https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Campaign Creators</a
+            >,
+            <a
+              href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kelly Sikkema</a
+            >,
+            <a
+              href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Fotis Fotopoulos</a
+            >,
+            <a
+              href="https://unsplash.com/@ka_idris?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kam Idris</a
+            >,
+            <a
+              href="https://unsplash.com/@rarchitecture_melbourne?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >R ARCHITECTURE</a
+            >, and
+            <a
+              href="https://unsplash.com/@spacejoy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Spacejoy</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Services - Photos by
+            <a
+              href="https://unsplash.com/@bradneathery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Brad Neathery</a
+            >,
+            <a
+              href="https://unsplash.com/@jasongoodman_youxventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Jason Goodman</a
+            >,
+            <a
+              href="https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Scott Graham</a
+            >, and
+            <a
+              href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Annie Spratt</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Team - Headshots by
+            <a
+              href="https://unsplash.com/@cikstefan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Štefan Štefančík</a
+            >,
+            <a
+              href="https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Albert Dera</a
+            >,
+            <a
+              href="https://unsplash.com/@kimsondoan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kimson Doan</a
+            >, and
+            <a
+              href="https://unsplash.com/@whatuprell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Dorrell Tibbs</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Process - Images by
+            <a
+              href="https://unsplash.com/@le_buzz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Le Buzz Studio</a
+            >,
+            <a
+              href="https://unsplash.com/@balazsketyi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Balázs Kétyi</a
+            >,
+            <a
+              href="https://unsplash.com/es/@hostreviews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Stephen Phillips</a
+            >, and
+            <a
+              href="https://unsplash.com/@kobuagency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kobu Agency</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e4f1610b04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,0 +1,111 @@
+@use "../variables" as *;
+
+.services {
+  hgroup p {
+    min-width: 8rem;
+  }
+  .contentDivider:first-of-type {
+    background-color: $colorDark2;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    li {
+      margin-top: 0.75rem;
+    }
+    button {
+      color: $colorLight2;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+    button:hover, button:active, button:focus-visible {
+      color: $colorPrimary;
+      outline: none;
+    }
+    .activeService button {
+      color: $colorPrimary;
+      font-weight: 600;
+    }
+  }
+  hgroup p {
+    color: $colorLight1;
+  }
+  .serviceInfo {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    position: absolute;
+    .imgContainer {
+      width: 5rem;
+      height: 5rem;
+      margin: auto;
+    }
+    img {
+      border-radius: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+    article {
+      text-align: center;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 2.25rem;
+    }
+    p {
+      color: $colorLight2;
+      font-size: 0.85rem;
+    }
+    span {
+      color: $colorDark1;
+      margin-right: 0.5rem;
+    }
+    li {
+      color: $colorPrimary;
+      font-family: $fontSecondary;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin: 0.5rem 0;
+    }
+  }
+  .activeServiceInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+  }
+}
+
+@media (min-width: 775px) and (min-height: 625px) {
+  .services .serviceInfo {
+    h3 {
+      text-align: center;
+    }
+    article {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1030px) and (min-height: 625px) {
+  .services .serviceInfo {
+    .imgContainer {
+      margin: 0;
+    }
+    article {
+      width: 75%;
+      text-align: left;
+    }
+    h3 {
+      text-align: left;
+    }
+  }
+  .services .activeServiceInfo {
+    flex-direction: row;
+  }
+}

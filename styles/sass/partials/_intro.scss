@@ -1,0 +1,201 @@
+@use "../variables" as *;
+
+.intro .contentDivider {
+  h1 {
+    color: $colorDark1;
+  }
+  hgroup p {
+    color: $colorPrimary;
+    font-size: 1.75rem;
+    min-width: 13rem;
+  }
+  a {
+    color: $colorLight1;
+    text-decoration: none;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus-visible {
+      color: $colorPrimary;
+      font-weight: 700;
+      outline: none;
+    }
+  }
+  &:first-of-type {
+    background-color: $colorDark2;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    li {
+      color: $colorLight2;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.intro .imgContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  .animalBackdrop {
+    border-radius: 100%;
+    height: 13rem;
+    width: 13rem;
+    clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  }
+  .animalCutout {
+    position: absolute;
+  }
+}
+
+.intro {
+  .activeImage {
+    opacity: 1;
+    visibility: visible;
+  }
+  .foxImages .animalCutout {
+    bottom: 0;
+    right: 0;
+    width: 8rem;
+  }
+
+  .birdImages .animalCutout {
+    top: 40%;
+    width: 10rem;
+    left: 30%;
+  }
+  .turtleImages .animalCutout {
+    top: 40%;
+    width: 10rem;
+    right: 0;
+  }
+}
+
+.intro .contentDivider:last-of-type .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  h3 {
+    font-size: 2rem;
+    display: flex;
+    padding-bottom: 8rem;
+  }
+  hr {
+    width: 3rem;
+    margin: 0;
+    margin-left: 1rem;
+    margin-bottom: 8rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    margin: 1rem 0;
+    border: 1px solid gray;
+    border-radius: 100%;
+    background-color: $colorLight2;
+    button {
+      height: 100%;
+    }
+    &:hover img,
+    &:active img,
+    &:focus-visible img {
+      display: block;
+    }
+    img {
+      border-radius: 100%;
+      height: 100%;
+      filter: grayscale(90%);
+      display: none;
+    }
+    p {
+      position: absolute;
+      z-index: 10;
+      color: $colorDark1;
+      font-family: $fontPrimary;
+      font-size: 1rem;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .activeSelection {
+    width: 3rem;
+    height: 3rem;
+    p {
+      font-size: 1.25rem;
+    }
+    img {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 775px) and (min-height: 625px) {
+  h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 3.5rem;
+  }
+  .intro hgroup p {
+    left: auto;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  }
+  .intro .imgContainer {
+    bottom: 18%;
+  }
+}
+
+@media (min-width: 990px) and (min-height: 625px) {
+  .intro .imgContainer {
+    bottom: 60%;
+    transform: translate(-85%, 50%);
+    .animalBackdrop {
+      width: 17rem;
+      height: 17rem;
+    }
+  }
+  .intro {
+    .birdImages .animalCutout {
+      left: 80%;
+    }
+    .contentDivider:last-of-type .wrapper h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 1100px) and (min-height: 625px) {
+  .intro .contentDivider:last-of-type .wrapper h3 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .intro hgroup p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1120px) and (min-height: 625px) {
+  .intro .contentDivider:first-of-type ul {
+    justify-content: flex-start;
+  }
+}
