@@ -389,8 +389,8 @@ header .imgContainer {
 }
 header i {
   margin-right: 0.75rem;
-  color: #848383;
-  border: 1px solid #848383;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 0.5rem;
   border-radius: 100%;
   font-size: 0.75rem;
@@ -399,6 +399,14 @@ header i:hover, header i:active, header i:focus-visible {
   color: #f7484e;
   border-color: #f7484e;
   outline: none;
+}
+header .disabled {
+  color: #848383;
+  border-color: #848383;
+}
+header .disabled:hover, header .disabled:active {
+  color: #848383;
+  border-color: #848383;
 }
 header button i {
   margin: 0;

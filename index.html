@@ -12,9 +12,12 @@
     <header>
       <div class="wrapper">
         <div class="headerIcons">
-          <!-- This search icon is currently purely for decoration. I can give it proper functionality on sites with more than one page and a need for content filtering. -->
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <button class="shareButton" aria-label="Share this site - copy url to clipboard.">
+          <!-- This search icon is currently purely for decoration. I don't have a backend infrastructure for this conversion nor is the search option crucial for this page. However it is included in the design I worked with, therefore I will still include it with a "disabled" look.-->
+          <i class="fa-solid fa-magnifying-glass disabled"></i>
+          <button
+            class="shareButton"
+            aria-label="Share this site - copy url to clipboard."
+          >
             <i class="fa-solid fa-share-nodes"></i>
             <p class="copyNotice">Site URL copied to clipboard!</p>
           </button>

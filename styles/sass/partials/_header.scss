@@ -14,8 +14,8 @@ header {
   }
   i {
     margin-right: 0.75rem;
-    color: #848383;
-    border: 1px solid #848383;
+    color: $colorLight1;
+    border: 1px solid $colorLight1;
     padding: 0.5rem;
     border-radius: 100%;
     font-size: 0.75rem;
@@ -25,6 +25,15 @@ header {
       color: $colorPrimary;
       border-color: $colorPrimary;
       outline: none;
+    }
+  }
+  .disabled {
+    color: #848383;
+    border-color: #848383;
+    &:hover,
+    &:active {
+      color: #848383;
+      border-color: #848383;
     }
   }
   button i {
