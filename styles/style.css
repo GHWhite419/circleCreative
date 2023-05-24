@@ -312,6 +312,14 @@ hgroup p {
   font-size: 1rem;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
 br {
   display: block;
   margin: 0.5rem 0;
@@ -392,7 +400,38 @@ header i:hover, header i:active, header i:focus-visible {
   border-color: #f7484e;
   outline: none;
 }
+header button i {
+  margin: 0;
+  position: relative;
+}
+header .copyNotice {
+  position: absolute;
+  color: #f7484e;
+  font-family: "Open Sans", sans-serif;
+  left: 7.5%;
+  cursor: default;
+  display: none;
+}
 
+@media (min-width: 625px) {
+  header .headerIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .copyNotice {
+    position: relative;
+    margin: 0;
+  }
+}
 @media (min-width: 775px) and (min-height: 625px) {
   header img {
     content: url(../assets/logo1.png);
@@ -418,6 +457,7 @@ header i:hover, header i:active, header i:focus-visible {
 .intro .contentDivider a:hover, .intro .contentDivider a:active, .intro .contentDivider a:focus-visible {
   color: #f7484e;
   font-weight: 700;
+  outline: none;
 }
 .intro .contentDivider:first-of-type {
   background-color: #494648;
@@ -531,6 +571,9 @@ header i:hover, header i:active, header i:focus-visible {
   border-radius: 100%;
   background-color: #a4a4a4;
 }
+.intro .contentDivider:last-of-type .wrapper li button {
+  height: 100%;
+}
 .intro .contentDivider:last-of-type .wrapper li:hover img, .intro .contentDivider:last-of-type .wrapper li:active img, .intro .contentDivider:last-of-type .wrapper li:focus-visible img {
   display: block;
 }
@@ -548,6 +591,7 @@ header i:hover, header i:active, header i:focus-visible {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   left: 50%;
+  top: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -760,17 +804,21 @@ header i:hover, header i:active, header i:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-style: italic;
-  font-size: 0.8rem;
 }
 .work ul li {
   margin: 1rem 0.5rem;
 }
-.work ul li:hover, .work ul li:active, .work ul li:focus-visible {
+.work ul button {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.work ul button:hover,
+.work ul button:active,
+.work ul button:focus-visible {
   color: #f7484e;
   outline: none;
 }
-.work ul .activeWork {
+.work ul .activeWork button {
   color: #f7484e;
   font-weight: 700;
 }
@@ -821,18 +869,20 @@ header i:hover, header i:active, header i:focus-visible {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: #a4a4a4;
-  font-size: 0.85rem;
-  font-style: italic;
 }
 .services .contentDivider:first-of-type li {
   margin-top: 0.75rem;
 }
-.services .contentDivider:first-of-type li:hover, .services .contentDivider:first-of-type li:active, .services .contentDivider:first-of-type li:focus-visible {
+.services .contentDivider:first-of-type button {
+  color: #a4a4a4;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.services .contentDivider:first-of-type button:hover, .services .contentDivider:first-of-type button:active, .services .contentDivider:first-of-type button:focus-visible {
   color: #f7484e;
   outline: none;
 }
-.services .contentDivider:first-of-type .activeService {
+.services .contentDivider:first-of-type .activeService button {
   color: #f7484e;
   font-weight: 600;
 }
@@ -845,7 +895,6 @@ header i:hover, header i:active, header i:focus-visible {
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
   position: absolute;
-  width: 85%;
 }
 .services .serviceInfo .imgContainer {
   width: 5rem;
@@ -898,6 +947,7 @@ header i:hover, header i:active, header i:focus-visible {
           justify-content: space-between;
   opacity: 1;
   visibility: visible;
+  position: static;
 }
 
 @media (min-width: 775px) and (min-height: 625px) {
@@ -1061,18 +1111,22 @@ header i:hover, header i:active, header i:focus-visible {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 0.85rem;
-  color: #fff;
-  font-style: italic;
 }
 .process li {
   margin-top: 1rem;
 }
-.process li:hover, .process li:active, .process li:focus-visible {
+.process li button {
+  font-size: 0.85rem;
+  color: #fff;
+  font-style: italic;
+}
+.process li button:hover,
+.process li button:active,
+.process li button:focus-visible {
   font-weight: 600;
   outline: none;
 }
-.process .activeProcess {
+.process .activeProcess button {
   color: #fff;
   font-weight: 600;
 }
@@ -1133,9 +1187,12 @@ header i:hover, header i:active, header i:focus-visible {
           justify-content: space-between;
   padding-top: 1.5rem;
 }
-.process .processArrows i:hover,
-.process .processArrows i:active,
-.process .processArrows i:focus-visible {
+.process .processArrows button:focus-visible {
+  outline: none;
+}
+.process .processArrows button:hover i,
+.process .processArrows button:active i,
+.process .processArrows button:focus-visible i {
   color: #f7484e;
   outline: none;
 }
@@ -1245,9 +1302,20 @@ header i:hover, header i:active, header i:focus-visible {
   padding-top: 4rem;
 }
 .client li {
-  max-width: 5rem;
+  max-width: 3rem;
+}
+.client li img {
+  max-height: 3rem;
 }
 
+@media (min-width: 485px) {
+  .client li {
+    max-width: 5rem;
+  }
+  .client li img {
+    max-height: none;
+  }
+}
 @media (min-width: 775px) and (min-height: 625px) {
   .client ul {
     -ms-flex-wrap: wrap;
@@ -1467,7 +1535,9 @@ footer ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-footer li:hover, footer li:focus-visible, footer li:active {
+footer li:hover,
+footer li:focus-visible,
+footer li:active {
   color: #f7484e;
   outline: none;
 }
@@ -1476,22 +1546,104 @@ footer p {
   text-align: center;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  margin: 0.5rem 0;
 }
 footer a {
   color: #f7484e;
   text-decoration: none;
 }
+footer button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #f7484e;
+}
+footer .creditsModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  z-index: 10;
+  padding: 1rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 4px solid #000;
+}
+footer .creditsModal button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: #000;
+}
+footer .creditsModal button:hover,
+footer .creditsModal button:active,
+footer .creditsModal button:focus-visible {
+  color: #f7484e;
+}
+footer .creditsModal ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .creditsModal li {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+footer .creditsModal li:hover {
+  color: #000;
+}
+footer .modalDisplay {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  visibility: visible;
+}
 
 @media (min-width: 775px) and (min-height: 625px) {
   footer {
-    right: 2.25rem;
+    left: 2.25rem;
     -webkit-transform: none;
             transform: none;
-    width: auto;
+    width: 32%;
   }
   footer ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  footer li:hover,
+  footer li:focus-visible,
+  footer li:active {
+    color: #fff;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer button {
+    color: #fff;
+  }
+}
+@media (min-width: 985px), (min-width: 775px) and (min-height: 765px) {
+  footer {
+    left: auto;
+    right: 2.25rem;
+    width: auto;
+  }
+  footer li:hover,
+  footer li:focus-visible,
+  footer li:active {
+    color: #f7484e;
+  }
+  footer a {
+    color: #f7484e;
+  }
+  footer button {
+    color: #f7484e;
   }
 }

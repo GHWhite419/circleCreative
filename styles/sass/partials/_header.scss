@@ -1,9 +1,9 @@
 @use "../variables" as *;
 
 header {
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
   .wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -13,16 +13,46 @@ header {
     width: 5rem;
   }
   i {
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     color: #848383;
     border: 1px solid #848383;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 100%;
-    font-size: .75rem;
-    &:hover, &:active, &:focus-visible {
+    font-size: 0.75rem;
+    &:hover,
+    &:active,
+    &:focus-visible {
       color: $colorPrimary;
       border-color: $colorPrimary;
       outline: none;
+    }
+  }
+  button i {
+    margin: 0;
+    position: relative;
+  }
+  .copyNotice {
+    position: absolute;
+    color: $colorPrimary;
+    font-family: $fontTertiary;
+    left: 7.5%;
+    cursor: default;
+    display: none;
+  }
+}
+
+@media (min-width: 625px) {
+  header {
+    .headerIcons {
+      display: flex;
+    }
+    button {
+      display: flex;
+      align-items: center;
+    }
+    .copyNotice {
+      position: relative;
+      margin: 0;
     }
   }
 }

@@ -11,7 +11,9 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-  li:hover, li:focus-visible, li:active {
+  li:hover,
+  li:focus-visible,
+  li:active {
     color: $colorPrimary;
     outline: none;
   }
@@ -20,20 +22,96 @@ footer {
     text-align: center;
     font-family: $fontSecondary;
     text-transform: uppercase;
+    margin: 0.5rem 0;
   }
   a {
     color: $colorPrimary;
     text-decoration: none;
   }
+  button {
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+    color: $colorPrimary;
+  }
+  .creditsModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: $colorLight1;
+    z-index: 10;
+    padding: 1rem;
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+    transform: translate(-50%, 100%);
+    visibility: hidden;
+    transition: 0.4s;
+    border: 4px solid $colorDark1;
+    button {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      color: $colorDark1;
+    }
+    button:hover,
+    button:active,
+    button:focus-visible {
+      color: $colorPrimary;
+    }
+    ul {
+      flex-direction: column;
+    }
+    li {
+      margin: 0.5rem 0;
+      font-size: 0.8rem;
+    }
+    li:hover {
+      color: $colorDark1;
+    }
+  }
+  .modalDisplay {
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    visibility: visible;
+  }
 }
 
 @media (min-width: 775px) and (min-height: 625px) {
   footer {
-    right: 2.25rem;
+    left: 2.25rem;
     transform: none;
-    width: auto;
+    width: 32%;
     ul {
-        justify-content: space-between;
+      justify-content: space-between;
+    }
+    li:hover,
+    li:focus-visible,
+    li:active {
+      color: $colorLight1;
+    }
+    a {
+      color: $colorLight1;
+    }
+    button {
+      color: $colorLight1;
+    }
+  }
+}
+
+@media (min-width: 985px), (min-width: 775px) and (min-height: 765px) {
+  footer {
+    left: auto;
+    right: 2.25rem;
+    width: auto;
+    li:hover,
+    li:focus-visible,
+    li:active {
+      color: $colorPrimary;
+    }
+    a {
+      color: $colorPrimary;
+    }
+    button {
+      color: $colorPrimary;
     }
   }
 }

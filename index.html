@@ -12,8 +12,12 @@
     <header>
       <div class="wrapper">
         <div class="headerIcons">
-          <i tabindex="0" class="fa-solid fa-magnifying-glass"></i>
-          <i tabindex="0" class="fa-solid fa-share-nodes"></i>
+          <!-- This search icon is currently purely for decoration. I can give it proper functionality on sites with more than one page and a need for content filtering. -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="shareButton" aria-label="Share this site - copy url to clipboard.">
+            <i class="fa-solid fa-share-nodes"></i>
+            <p class="copyNotice">Site URL copied to clipboard!</p>
+          </button>
         </div>
         <div class="imgContainer">
           <img src="./assets/logo2.png" alt="Logo for Circle creative" />
@@ -93,26 +97,41 @@
             <h3>This is Fox</h3>
             <hr />
             <ul>
-              <li tabindex="0" class="introSelector activeSelection">
-                <p>01</p>
-                <img
-                  src="./assets/introFoxSelect.jpg"
-                  alt="A grassy hill sits beneath a clear blue sky."
-                />
+              <li class="introSelector activeSelection">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the fox image.</span
+                  >
+                  <p>01</p>
+                  <img
+                    src="./assets/introFoxSelect.jpg"
+                    alt="A grassy hill sits beneath a clear blue sky."
+                  />
+                </button>
               </li>
-              <li tabindex="0" class="introSelector">
-                <p>02</p>
-                <img
-                  src="./assets/introBirdSelect.jpg"
-                  alt="A line of snowy spruce trees huddle beneath a white sky."
-                />
+              <li class="introSelector">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the bird image.</span
+                  >
+                  <p>02</p>
+                  <img
+                    src="./assets/introBirdSelect.jpg"
+                    alt="A line of snowy spruce trees huddle beneath a white sky."
+                  />
+                </button>
               </li>
-              <li tabindex="0" class="introSelector">
-                <p>03</p>
-                <img
-                  src="./assets/introTurtleSelect.jpg"
-                  alt="A sandy beach offers a long view of open sea."
-                />
+              <li class="introSelector">
+                <button>
+                  <span class="sr-only"
+                    >This button displays the turtle image.</span
+                  >
+                  <p>03</p>
+                  <img
+                    src="./assets/introTurtleSelect.jpg"
+                    alt="A sandy beach offers a long view of open sea."
+                  />
+                </button>
               </li>
             </ul>
           </div>
@@ -174,10 +193,18 @@
               <p>Our projects</p>
             </hgroup>
             <ul>
-              <li tabindex="0" class="activeWork">Branding</li>
-              <li tabindex="0">Web design</li>
-              <li tabindex="0">Marketing</li>
-              <li tabindex="0">Interior</li>
+              <li class="activeWork">
+                <button>Branding</button>
+              </li>
+              <li>
+                <button>Web design</button>
+              </li>
+              <li>
+                <button>Marketing</button>
+              </li>
+              <li>
+                <button>Interior</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -289,10 +316,18 @@
               <p>The best solutions</p>
             </hgroup>
             <ul class="serviceSelector">
-              <li tabindex="0" class="activeService">Branding design</li>
-              <li tabindex="0">Marketing online</li>
-              <li tabindex="0">Project management</li>
-              <li tabindex="0">Web services</li>
+              <li class="activeService">
+                <button>Branding design</button>
+              </li>
+              <li>
+                <button>Marketing online</button>
+              </li>
+              <li>
+                <button>Project management</button>
+              </li>
+              <li>
+                <button>Web services</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -598,10 +633,18 @@
               <p>Working process</p>
             </hgroup>
             <ul>
-              <li tabindex="0" class="activeProcess">01. Order reception</li>
-              <li tabindex="0">02. Design</li>
-              <li tabindex="0">03. Marketing</li>
-              <li tabindex="0">04. Completion</li>
+              <li class="activeProcess">
+                <button>01. Order reception</button>
+              </li>
+              <li>
+                <button>02. Design</button>
+              </li>
+              <li>
+                <button>03. Marketing</button>
+              </li>
+              <li>
+                <button>04. Completion</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -672,14 +715,15 @@
               </p>
             </article>
             <div class="processArrows">
-              <i
-                tabindex="0"
-                class="fa-sharp fa-solid fa-arrow-left-long fa-xl"
-              ></i>
-              <i
-                tabindex="0"
-                class="fa-sharp fa-solid fa-arrow-right-long fa-xl"
-              ></i>
+              <button
+                aria-label="Display the previous article."
+                class="leftArrow"
+              >
+                <i class="fa-sharp fa-solid fa-arrow-left-long fa-xl"></i>
+              </button>
+              <button aria-label="Display the next article." class="rightArrow">
+                <i class="fa-sharp fa-solid fa-arrow-right-long fa-xl"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -832,6 +876,208 @@
           <span class="sr-only">Opens in new tab</span>
         </a>
       </p>
+      <p>
+        <button class="openModal">
+          Photo credits <span class="sr-only">Opens modal</span>
+        </button>
+        - Website designed by
+        <a href="https://galenwhitecodes.tech" target="_blank"
+          >Galen White
+          <span class="sr-only">Opens in new tab</span>
+        </a>
+      </p>
+      <div class="creditsModal">
+        <span class="sr-only">All links will open in a new tab.</span>
+        <button class="closeModal" aria-label="Close this modal">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <ul>
+          <li>
+            All corporate logos by
+            <a href="https://themeforest.net/user/moontheme" target="_blank"
+              >moontheme</a
+            >
+            on
+            <a href="https://themeforest.net/" target="_blank">themeforest</a>
+          </li>
+          <li>
+            Intro - Animal cutouts by Vahya White (no profile) on
+            <a href="https://transparentpng.com" target="_blank"
+              >transparentpng.com</a
+            >
+          </li>
+          <li>
+            Intro - Landscape photos by
+            <a
+              href="https://unsplash.com/@sebastian_unrau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Sebastian Unrau</a
+            >,
+            <a
+              href="https://unsplash.com/@whongru?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Hongru Wang</a
+            >,
+            <a
+              href="https://unsplash.com/it/@sepoys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Rohit Tandon</a
+            >,
+            <a
+              href="https://unsplash.com/@thkelley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Thomas Kelley</a
+            >, and
+            <a
+              href="https://unsplash.com/@lopezrobin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Lopez Robin</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            History - Headshot by
+            <a
+              href="https://unsplash.com/es/@voneciacarswell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Vonecia Carswell</a
+            >
+            on
+            <a
+              href="
+              https://unsplash.com/"
+              target="_blank"
+              >Unsplash</a
+            >
+          </li>
+          <li>
+            Work - Photos by
+            <a
+              href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Jeff Sheldon</a
+            >,
+            <a
+              href="https://unsplash.com/@fazurrehman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Faizur Rehman</a
+            >,
+            <a
+              href="https://unsplash.com/@daniellajardim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Ella Jardim</a
+            >,
+            <a
+              href="https://unsplash.com/@campaign_creators?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Campaign Creators</a
+            >,
+            <a
+              href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kelly Sikkema</a
+            >,
+            <a
+              href="https://unsplash.com/@ffstop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Fotis Fotopoulos</a
+            >,
+            <a
+              href="https://unsplash.com/@ka_idris?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kam Idris</a
+            >,
+            <a
+              href="https://unsplash.com/@rarchitecture_melbourne?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >R ARCHITECTURE</a
+            >, and
+            <a
+              href="https://unsplash.com/@spacejoy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Spacejoy</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Services - Photos by
+            <a
+              href="https://unsplash.com/@bradneathery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Brad Neathery</a
+            >,
+            <a
+              href="https://unsplash.com/@jasongoodman_youxventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Jason Goodman</a
+            >,
+            <a
+              href="https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Scott Graham</a
+            >, and
+            <a
+              href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Annie Spratt</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Team - Headshots by
+            <a
+              href="https://unsplash.com/@cikstefan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Štefan Štefančík</a
+            >,
+            <a
+              href="https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Albert Dera</a
+            >,
+            <a
+              href="https://unsplash.com/@kimsondoan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kimson Doan</a
+            >, and
+            <a
+              href="https://unsplash.com/@whatuprell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Dorrell Tibbs</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+          <li>
+            Process - Images by
+            <a
+              href="https://unsplash.com/@le_buzz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Le Buzz Studio</a
+            >,
+            <a
+              href="https://unsplash.com/@balazsketyi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Balázs Kétyi</a
+            >,
+            <a
+              href="https://unsplash.com/es/@hostreviews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Stephen Phillips</a
+            >, and
+            <a
+              href="https://unsplash.com/@kobuagency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Kobu Agency</a
+            >
+            on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/e4f1610b04.js"

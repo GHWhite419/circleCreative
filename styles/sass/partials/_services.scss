@@ -10,18 +10,20 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      color: $colorLight2;
-      font-size: 0.85rem;
-      font-style: italic;
     }
     li {
       margin-top: 0.75rem;
     }
-    li:hover, li:active, li:focus-visible {
+    button {
+      color: $colorLight2;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+    button:hover, button:active, button:focus-visible {
       color: $colorPrimary;
       outline: none;
     }
-    .activeService {
+    .activeService button {
       color: $colorPrimary;
       font-weight: 600;
     }
@@ -34,7 +36,6 @@
     visibility: hidden;
     transition: opacity 0.4s ease;
     position: absolute;
-    width: 85%;
     .imgContainer {
       width: 5rem;
       height: 5rem;
@@ -76,6 +77,7 @@
     justify-content: space-between;
     opacity: 1;
     visibility: visible;
+    position: static;
   }
 }
 

@@ -54,10 +54,21 @@
     padding-top: 4rem;
   }
   li {
-    max-width: 5rem;
+    max-width: 3rem;
+    img {
+      max-height: 3rem;
+    }
   }
 }
-
+@media (min-width: 485px) {
+  // Adjust logos
+  .client li {
+    max-width: 5rem;
+    img {
+      max-height: none;
+    }
+  }
+}
 @media (min-width: 775px) and (min-height: 625px) {
   .client ul {
     flex-wrap: wrap;

@@ -1,5 +1,5 @@
+// **********************
 // Intro section carousel
-
 const introSelectors = document.querySelectorAll(".introSelector");
 const introAnimals = document.querySelectorAll(".introAnimal");
 introSelectors.forEach((button, index) => {
@@ -46,6 +46,7 @@ introSelectors.forEach((button, index) => {
   });
 });
 
+// *********************
 // Work section carousel
 
 // This code block uses the same process as the Intro carousel.
@@ -66,6 +67,7 @@ workSelectors.forEach((selector, index) => {
   });
 });
 
+// *************************
 // Services section carousel
 
 // Again, same process:
@@ -86,6 +88,7 @@ serviceSelectors.forEach((selector, index) => {
   });
 });
 
+// ************************
 // Process section carousel
 
 // For this block of code, I've gone with a different approach since this utilizes "previous slide" and "next slide" buttons.
@@ -104,12 +107,12 @@ processSelectors.forEach((selector, index) => {
 });
 
 // Next I declare variables selecting the left and right arrows. Left will decrement x by one, while right will increment it. Both arrows then run the processDisplay function.
-const leftArrow = document.querySelector(".fa-arrow-left-long");
+const leftArrow = document.querySelector(".leftArrow");
 leftArrow.addEventListener("click", () => {
   x--;
   processDisplay();
 });
-const rightArrow = document.querySelector(".fa-arrow-right-long");
+const rightArrow = document.querySelector(".rightArrow");
 rightArrow.addEventListener("click", () => {
   x++;
   processDisplay();
@@ -117,18 +120,18 @@ rightArrow.addEventListener("click", () => {
 
 // The core of this code block lies in this function:
 const processDisplay = () => {
-    // As usual, I first remove every display class.
+  // As usual, I first remove every display class.
   processSelectors.forEach((i) => {
     i.classList.remove("activeProcess");
   });
   processArticles.forEach((i) => {
     i.classList.remove("activeProcessInfo");
   });
-// And then I re-add the appropriate display classes, but now I use the x variable instead of an "index" argument to track which elements need display classes.
+  // And then I re-add the appropriate display classes, but now I use the x variable instead of an "index" argument to track which elements need display classes.
   processSelectors[x].classList.add("activeProcess");
   processArticles[x].classList.add("activeProcessInfo");
 
-// The below code will then render the left and/or right arrows depending on x's value. If x = 0, the first process article should be displayed and therefore the left arrow should be hidden. If x is at its maximum and the last process article is shown, then the right arrow should be hidden. If neither the first or last articles are displayed, both arrows should display.
+  // The below code will then render the left and/or right arrows depending on x's value. If x = 0, the first process article should be displayed and therefore the left arrow should be hidden. If x is at its maximum and the last process article is shown, then the right arrow should be hidden. If neither the first or last articles are displayed, both arrows should display.
   if (x === 0) {
     leftArrow.style.visibility = "hidden";
     rightArrow.style.visibility = "visible";
@@ -142,3 +145,39 @@ const processDisplay = () => {
 };
 // Finally, I simply run the above function once on initial page load so that everything is set up to run :)
 processDisplay();
+
+// *******************
+// Photo credits modal
+
+// This is a super simple code block to open my photo credits modal from the footer.
+const openModal = document.querySelector(".openModal");
+const closeModal = document.querySelector(".closeModal");
+const creditsModal = document.querySelector(".creditsModal");
+
+// Targeting the "Photo Credits" button in the footer, this opens up the modal.
+openModal.addEventListener("click", () => {
+  creditsModal.classList.add("modalDisplay");
+});
+
+// And this closes it
+closeModal.addEventListener("click", () => {
+  creditsModal.classList.remove("modalDisplay");
+});
+
+// ************************
+// Share button (in header)
+
+// This code block copies the site URL to the clipboard when a user clicks on the "Share" button in the header.
+const shareButton = document.querySelector(".shareButton");
+shareButton.addEventListener("click", () => {
+  //The two following lines of code declare a variable which uses the window object to track down the current URL, and then uses the navigator.clipboard object and the writeText method to set the saved URL as the clipboard text.
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(function () {
+    // Then I display a message on the page to notify the user that they've saved text to the clipboard. The message is hidden by default using "display: none", so this function first sets its display property to "block", making it visible. A short timer then sets in to allow the message to display for a couple of seconds before it's hidden again.
+    const copyNotice = document.querySelector(".copyNotice");
+    copyNotice.style.display = "block";
+    setTimeout(function () {
+      copyNotice.style.display = "none";
+    }, 2500);
+  });
+});

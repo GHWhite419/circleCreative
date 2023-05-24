@@ -15,18 +15,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 0.85rem;
-    color: $colorLight1;
-    font-style: italic;
   }
   li {
     margin-top: 1rem;
-    &:hover, &:active, &:focus-visible {
+    button {
+      font-size: 0.85rem;
+      color: $colorLight1;
+      font-style: italic;
+    }
+    button:hover,
+    button:active,
+    button:focus-visible {
       font-weight: 600;
       outline: none;
     }
   }
-  .activeProcess {
+  .activeProcess button {
     color: $colorLight1;
     font-weight: 600;
   }
@@ -78,9 +82,12 @@
     display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;
-    i:hover,
-    i:active,
-    i:focus-visible {
+    button:focus-visible {
+      outline: none;
+    }
+    button:hover i,
+    button:active i,
+    button:focus-visible i {
       color: $colorPrimary;
       outline: none;
     }

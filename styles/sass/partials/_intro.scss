@@ -19,6 +19,7 @@
     &:focus-visible {
       color: $colorPrimary;
       font-weight: 700;
+      outline: none;
     }
   }
   &:first-of-type {
@@ -109,6 +110,9 @@
     border: 1px solid gray;
     border-radius: 100%;
     background-color: $colorLight2;
+    button {
+      height: 100%;
+    }
     &:hover img,
     &:active img,
     &:focus-visible img {
@@ -127,6 +131,7 @@
       font-family: $fontPrimary;
       font-size: 1rem;
       left: 50%;
+      top: 0;
       transform: translate(-50%, -50%);
     }
   }
