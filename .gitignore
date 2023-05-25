@@ -1,6 +1,7 @@
 node_modules
 **/.DS_Store
 /design/
+/oldAssets/
 toDo.txt
 photoCredits.txt
 workTimeline.txt

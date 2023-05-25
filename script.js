@@ -14,8 +14,8 @@ introSelectors.forEach((button, index) => {
     // Next, I'll re-add the active classes to the specific introAnimal and introSelector that corresponds with the index of the button clicked.
     introSelectors[index].classList.add("activeSelection");
     introAnimals[index].classList.add("activeImage");
-    // Finally, I'm going to use a switch statement to apply some changes to the h3 and hr elements so that they line up with their corresponding selector.
-    const introHeading = document.querySelector(".intro h3");
+    // Finally, I'm going to use a switch statement to apply some changes to the h2 and hr elements so that they line up with their corresponding selector.
+    const introHeading = document.querySelector(".intro h2");
     const headingLine = document.querySelector(".intro hr");
     switch (index) {
       case 0:

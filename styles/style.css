@@ -545,12 +545,14 @@ header .copyNotice {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.intro .contentDivider:last-of-type .wrapper h3 {
+.intro .contentDivider:last-of-type .wrapper h2 {
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 8rem;
+  font-weight: 700;
+  margin: 0;
 }
 .intro .contentDivider:last-of-type .wrapper hr {
   width: 3rem;
@@ -643,12 +645,12 @@ header .copyNotice {
   .intro .birdImages .animalCutout {
     left: 80%;
   }
-  .intro .contentDivider:last-of-type .wrapper h3 {
+  .intro .contentDivider:last-of-type .wrapper h2 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 1100px) and (min-height: 625px) {
-  .intro .contentDivider:last-of-type .wrapper h3 {
+  .intro .contentDivider:last-of-type .wrapper h2 {
     font-size: 2rem;
   }
   h1 {
