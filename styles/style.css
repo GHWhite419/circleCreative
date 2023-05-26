@@ -1529,7 +1529,7 @@ header .copyNotice {
     width: 62%;
   }
 }
-footer {
+footer .credits {
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -1538,34 +1538,34 @@ footer {
   width: 85%;
   max-width: 17.5rem;
 }
-footer ul {
+footer .credits ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-footer li:hover,
-footer li:focus-visible,
-footer li:active {
+footer .credits li:hover,
+footer .credits li:focus-visible,
+footer .credits li:active {
   color: #f7484e;
   outline: none;
 }
-footer p {
+footer .credits p {
   font-size: 0.75rem;
   text-align: center;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: 0.5rem 0;
 }
-footer a {
-  color: #f7484e;
-  text-decoration: none;
-}
-footer button {
+footer .credits button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #f7484e;
+}
+footer a {
+  color: #f7484e;
+  text-decoration: none;
 }
 footer .creditsModal {
   position: fixed;
@@ -1582,11 +1582,13 @@ footer .creditsModal {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 4px solid #000;
+  width: 95%;
+  overflow-y: auto;
+  max-height: 90%;
 }
 footer .creditsModal button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+  position: relative;
+  left: 94%;
   color: #000;
 }
 footer .creditsModal button:hover,
@@ -1595,6 +1597,9 @@ footer .creditsModal button:focus-visible {
   color: #f7484e;
 }
 footer .creditsModal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1615,45 +1620,61 @@ footer .modalDisplay {
   visibility: visible;
 }
 
+@media (min-width: 445px) {
+  footer .creditsModal button {
+    position: absolute;
+    left: auto;
+    right: 1rem;
+    top: 1rem;
+  }
+}
 @media (min-width: 775px) and (min-height: 625px) {
-  footer {
+  footer .credits {
     left: 2.25rem;
     -webkit-transform: none;
             transform: none;
     width: 32%;
   }
-  footer ul {
+  footer .credits ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  footer li:hover,
-  footer li:focus-visible,
-  footer li:active {
+  footer .credits li:hover,
+  footer .credits li:focus-visible,
+  footer .credits li:active {
     color: #fff;
   }
-  footer a {
+  footer .credits a {
     color: #fff;
   }
-  footer button {
+  footer .credits button {
     color: #fff;
+  }
+  footer .creditsModal {
+    width: 70%;
+  }
+}
+@media (min-width: 825px) and (min-height: 625px) {
+  footer {
+    width: auto;
   }
 }
 @media (min-width: 985px), (min-width: 775px) and (min-height: 765px) {
-  footer {
+  footer .credits {
     left: auto;
     right: 2.25rem;
     width: auto;
   }
-  footer li:hover,
-  footer li:focus-visible,
-  footer li:active {
+  footer .credits li:hover,
+  footer .credits li:focus-visible,
+  footer .credits li:active {
     color: #f7484e;
   }
-  footer a {
+  footer .credits a {
     color: #f7484e;
   }
-  footer button {
+  footer .credits button {
     color: #f7484e;
   }
 }
