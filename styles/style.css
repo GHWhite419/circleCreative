@@ -1530,13 +1530,9 @@ header .copyNotice {
   }
 }
 footer .credits {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
   width: 85%;
   max-width: 17.5rem;
+  margin: auto;
 }
 footer .credits ul {
   display: -webkit-box;
@@ -1630,10 +1626,13 @@ footer .modalDisplay {
 }
 @media (min-width: 775px) and (min-height: 625px) {
   footer .credits {
+    position: absolute;
+    bottom: 0;
     left: 2.25rem;
     -webkit-transform: none;
             transform: none;
     width: 32%;
+    margin: 0;
   }
   footer .credits ul {
     -webkit-box-pack: justify;
